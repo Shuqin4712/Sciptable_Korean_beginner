@@ -14,7 +14,7 @@
 | `stage0-probe.js` | Stage 0 环境探针（Speech / FileManager / config 分支验证，含真机探测结论） |
 | `vocab.json` | 词库（50 词，含音变标注） |
 | `hanuri-lib.js` | 数据层公共模块：CONFIG / Store / Scheduler（`importModule` 引入） |
-| `Hanuri.js` | 主入口：WidgetView 组件渲染 + `main()` 分发（组件模式 / App 预览） |
+| `Hanuri.js` | 主入口：WidgetView 组件渲染 + SpeechService + InteractView（UITable 交互）+ `main()` 分发 |
 | `setup.js` | 一次性安装脚本：内嵌词库，运行后自动创建 `hanuri/` 目录并写入 `vocab.json`（由 `vocab.json` 生成，内容一致） |
 | `test-scheduler.js` | Scheduler 断言测试（真机内运行，看 Alert 全绿即通过） |
 
@@ -36,8 +36,8 @@ Scriptable 里「脚本」和「数据文件」处理方式不同：
 
 **看组件**：
 
-1. 再新建脚本命名 **`Hanuri`**，粘贴 `Hanuri.js` 内容。在 App 内点 ▶️ 运行 → 会弹出 medium 组件预览。
-2. 添加到主屏幕：长按主屏空白 → ➕ → 找到 **Scriptable** → 选 small 或 medium 尺寸 → 添加后长按该组件 → **编辑小组件** → Script 选 `Hanuri`，When Interacting 选 Run Script（这样点击组件会跳回脚本，为 Stage 3 的交互做准备）。
+1. 再新建脚本命名 **`Hanuri`**，粘贴 `Hanuri.js` 内容。在 App 内点 ▶️ 运行 → 打开今日单词的交互列表（🔊 正常朗读 / 🐢 逐音节慢读 / 点击 ⚡ 行看音变解释 / 点击例句朗读 / 底部「全部朗读」「回顾昨天」）。
+2. 添加到主屏幕：长按主屏空白 → ➕ → 找到 **Scriptable** → 选 small 或 medium 尺寸 → 添加后长按该组件 → **编辑小组件** → Script 选 `Hanuri`，When Interacting 选 Run Script（点击组件即跳回脚本、打开上面的交互列表）。
 
 ## 核心设计原则
 
@@ -50,5 +50,5 @@ Scriptable 里「脚本」和「数据文件」处理方式不同：
 - [x] Stage 0 — 环境验证（Speech 无 rate 参数 → 慢速走逐音节方案；FileManager 走 iCloud）
 - [x] Stage 1 — 数据层（50 词 `vocab.json` + Store + Scheduler + 断言测试，确定性/幂等/跨天已验证）
 - [x] Stage 2 — 组件渲染（`Hanuri.js` WidgetView，small/medium，深色渐变 + Color.dynamic，音变 ⚡）
-- [ ] Stage 3 — 交互与发音（UITable + SpeechService + 全部朗读 + 回顾昨天）
-- [ ] Stage 4 — 打磨（音变解释 Alert、异常处理、注释）
+- [x] Stage 3 — 交互与发音（UITable + SpeechService 🔊/🐢 + 全部朗读 + 回顾昨天 + 音变解释 Alert）
+- [ ] Stage 4 — 打磨（异常处理补全、边界情况、代码整理与注释）
