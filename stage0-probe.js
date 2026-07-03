@@ -139,11 +139,24 @@ async function main() {
 await main();
 
 // =============================================================================
-// 探测结论（在真机运行后手动填写，供 Stage 1+ 参考）
+// 探测结论（2026-07-03 真机运行，iCloud~dk~simonbs~Scriptable）
 // =============================================================================
-// - Speech 是否直接朗读韩文（无需额外设置）：___
-// - Speech.speak 是否支持 rate / 语速参数：___
-// - 若不支持，慢速 🐢 方案定为：逐音节分段朗读 / 直接砍掉（二选一）：___
-// - FileManager 后端实际选用：iCloud / local：___
-// - downloadFileFromiCloud 在读 iCloud 文件时是否必要：___
+// - Speech 是否直接朗读韩文（无需额外设置）：是。系统已装韩语语音，Speech.speak("안녕하세요")
+//   直接读出正确韩语发音，无需指定 language。
+//
+// - Speech.speak 是否支持 rate / 语速参数：不支持。
+//   反射 Object.getOwnPropertyNames(Speech) 只返回 [prototype, speak, toString]，
+//   没有 rate/voice/language 任何属性。
+//   ⚠️ 注意：探测里「接受第二参数(未抛错)=true」是假阳性——JS 对多余实参本就不抛错，
+//   第二参数被静默忽略，并非语速生效。以反射结果为准：无语速参数。
+//
+// - 慢速 🐢 方案（已锁定）：逐音节分段排队朗读。
+//   把 hangul 按音节拆分，每个音节单独 Speech.speak，靠 utterance 之间的天然停顿
+//   制造「慢而清晰」的效果。探测已验证连续排队多次 speak 可行（학·교）。
+//   实现放在 SpeechService.speak(text, slow)：slow=false 整词一次读；slow=true 逐音节读。
+//
+// - FileManager 后端实际选用：iCloud（成功，路径 .../iCloud~dk~simonbs~Scriptable/Documents/hanuri/）。
+//
+// - downloadFileFromiCloud 在读 iCloud 文件时是否必要：是，读 iCloud 文件前必做（async）。
+//   Store 的 loadVocab/loadState 读取前都要先 await downloadFileFromiCloud。
 // =============================================================================
