@@ -14,13 +14,24 @@
 | `stage0-probe.js` | Stage 0 环境探针（Speech / FileManager / config 分支验证，含真机探测结论） |
 | `vocab.json` | 词库（50 词，含音变标注） |
 | `hanuri-lib.js` | 数据层公共模块：CONFIG / Store / Scheduler（`importModule` 引入） |
+| `setup.js` | 一次性安装脚本：内嵌词库，运行后自动创建 `hanuri/` 目录并写入 `vocab.json`（由 `vocab.json` 生成，内容一致） |
 | `test-scheduler.js` | Scheduler 断言测试（真机内运行，看 Alert 全绿即通过） |
 
 ## 安装（在 iPhone 上）
 
-1. 把 `hanuri-lib.js`、`test-scheduler.js`（以及后续的 `Hanuri.js`）拷进 Scriptable 脚本目录。
-2. 把 `vocab.json` 放到 Scriptable 的 **`Documents/hanuri/`** 目录下（首次运行脚本会自动创建该目录；也可手动新建后放入）。
-3. 运行 `test-scheduler.js` 确认数据层正常，再添加主屏幕小组件（指向 `Hanuri.js`，Stage 2+ 提供）。
+Scriptable 里「脚本」和「数据文件」处理方式不同：
+
+**脚本（`.js`）—— 在 App 内粘贴，无需文件夹。** `importModule` 按脚本名查找，不按路径。
+
+1. Scriptable 点右上角 ➕ 新建脚本，命名 **`hanuri-lib`**，粘贴 `hanuri-lib.js` 全部内容。
+2. 同样新建 **`setup`**、**`test-scheduler`**（以及后续的 `Hanuri`），各自粘贴对应文件内容。
+
+**词库（`vocab.json`）—— 需放到 `Documents/hanuri/`。** Scriptable App 没有「新建文件夹」按钮，二选一：
+
+- **推荐**：运行一次 **`setup`** 脚本 —— 它会自动建目录并写入词库，无需碰「文件」App。
+- 或手动：iOS「文件」App → iCloud Drive → Scriptable → 新建文件夹 `hanuri` → 把 `vocab.json` 放进去。
+
+**验证**：运行 `test-scheduler`，看到 Alert「全部通过」即数据层正常。之后再添加主屏幕小组件（指向 `Hanuri`，Stage 2+ 提供）。
 
 ## 核心设计原则
 
