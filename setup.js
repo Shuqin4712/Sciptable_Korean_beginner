@@ -18,7 +18,7 @@ const VOCAB = {
   "meta": {
     "name": "TOPIK I 高频核心词库",
     "version": 3,
-    "count": 535
+    "count": 668
   },
   "words": [
     {
@@ -5397,6 +5397,1222 @@ const VOCAB = {
       "soundChange": "tensification",
       "pos": "名词",
       "meaning": "绿色",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0536",
+      "hangul": "남녀",
+      "romanization": "namnyeo",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "男女",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0537",
+      "hangul": "녹차",
+      "romanization": "nokcha",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "绿茶",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0538",
+      "hangul": "놀라다",
+      "romanization": "nolrada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "吃惊，惊讶",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0539",
+      "hangul": "놀이",
+      "romanization": "nori",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "游戏，玩耍",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0540",
+      "hangul": "농구",
+      "romanization": "nonggu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "篮球",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0541",
+      "hangul": "농담",
+      "romanization": "nongdam",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "玩笑",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0542",
+      "hangul": "높이",
+      "romanization": "nopi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "高度",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0543",
+      "hangul": "놓다",
+      "romanization": "notda",
+      "pronounced": "[노타]",
+      "soundChange": "aspiration",
+      "pos": "动词",
+      "meaning": "放",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0544",
+      "hangul": "누르다",
+      "romanization": "nureuda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "按，压",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0545",
+      "hangul": "눈물",
+      "romanization": "nunmul",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "眼泪",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0546",
+      "hangul": "눕다",
+      "romanization": "nupda",
+      "pronounced": "[눕따]",
+      "soundChange": "tensification",
+      "pos": "动词",
+      "meaning": "躺",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0547",
+      "hangul": "뉴스",
+      "romanization": "nyuseu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "新闻",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0548",
+      "hangul": "느끼다",
+      "romanization": "neukkida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "感觉，感受",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0549",
+      "hangul": "느낌",
+      "romanization": "neukkim",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "感觉",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0550",
+      "hangul": "느리다",
+      "romanization": "neurida",
+      "soundChange": null,
+      "pos": "形容词",
+      "meaning": "慢",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0551",
+      "hangul": "늘",
+      "romanization": "neul",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "总是，经常",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0552",
+      "hangul": "늘다",
+      "romanization": "neulda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "增加，增长",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0553",
+      "hangul": "늙다",
+      "romanization": "neukda",
+      "pronounced": "[늑따]",
+      "soundChange": "tensification",
+      "pos": "动词",
+      "meaning": "变老，年老",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0554",
+      "hangul": "능력",
+      "romanization": "neungryeok",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "能力",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0555",
+      "hangul": "늦다",
+      "romanization": "neutda",
+      "pronounced": "[늗따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "迟，晚",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0556",
+      "hangul": "다",
+      "romanization": "da",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "都，全部",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0557",
+      "hangul": "다녀오다",
+      "romanization": "danyeooda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "去一趟（回来）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0558",
+      "hangul": "다니다",
+      "romanization": "danida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "上（班／学），来往",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0559",
+      "hangul": "다르다",
+      "romanization": "dareuda",
+      "soundChange": null,
+      "pos": "形容词",
+      "meaning": "不同，不一样",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0560",
+      "hangul": "다른",
+      "romanization": "dareun",
+      "soundChange": null,
+      "pos": "冠词",
+      "meaning": "别的，其他的",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0561",
+      "hangul": "다리",
+      "romanization": "dari",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "桥；腿",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0562",
+      "hangul": "다림질",
+      "romanization": "darimjil",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "熨烫",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0563",
+      "hangul": "다섯째",
+      "romanization": "daseotjjae",
+      "soundChange": null,
+      "pos": "数词",
+      "meaning": "第五",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0564",
+      "hangul": "다양",
+      "romanization": "dayang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "多样，各种",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0565",
+      "hangul": "다음",
+      "romanization": "daeum",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "下一个，接下来",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0566",
+      "hangul": "다음날",
+      "romanization": "daeumnal",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "第二天",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0567",
+      "hangul": "다이어트",
+      "romanization": "daieoteu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "减肥",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0568",
+      "hangul": "다치다",
+      "romanization": "dachida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "受伤",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0569",
+      "hangul": "다하다",
+      "romanization": "dahada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "用尽，尽",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0570",
+      "hangul": "닦다",
+      "romanization": "dakda",
+      "pronounced": "[닥따]",
+      "soundChange": "tensification",
+      "pos": "动词",
+      "meaning": "擦，刷",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0571",
+      "hangul": "단순",
+      "romanization": "dansun",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "单纯，简单",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0572",
+      "hangul": "단어",
+      "romanization": "daneo",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "单词",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0573",
+      "hangul": "단추",
+      "romanization": "danchu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "纽扣",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0574",
+      "hangul": "단풍",
+      "romanization": "danpung",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "枫叶，红叶",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0575",
+      "hangul": "달",
+      "romanization": "dal",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "月；月亮",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0576",
+      "hangul": "달걀",
+      "romanization": "dalgyal",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "鸡蛋",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0577",
+      "hangul": "달다",
+      "romanization": "dalda",
+      "soundChange": null,
+      "pos": "形容词",
+      "meaning": "甜",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0578",
+      "hangul": "달력",
+      "romanization": "dalryeok",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "日历",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0579",
+      "hangul": "달리기",
+      "romanization": "dalrigi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "跑步",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0580",
+      "hangul": "달리다",
+      "romanization": "dalrida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "跑",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0581",
+      "hangul": "닭",
+      "romanization": "dak",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "鸡",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0582",
+      "hangul": "닭고기",
+      "romanization": "dakgogi",
+      "pronounced": "[닥꼬기]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "鸡肉",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0583",
+      "hangul": "닮다",
+      "romanization": "damda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "像，相似",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0584",
+      "hangul": "담배",
+      "romanization": "dambae",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "香烟，烟",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0585",
+      "hangul": "답",
+      "romanization": "dap",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "答案",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0586",
+      "hangul": "답답하다",
+      "romanization": "dapdaphada",
+      "pronounced": "[답따파다]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "憋闷，闷",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0587",
+      "hangul": "답장",
+      "romanization": "dapjang",
+      "pronounced": "[답짱]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "回信",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0588",
+      "hangul": "대",
+      "romanization": "dae",
+      "soundChange": null,
+      "pos": "依存名词",
+      "meaning": "辆／台（量词）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0589",
+      "hangul": "대답",
+      "romanization": "daedap",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "回答",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0590",
+      "hangul": "대부분",
+      "romanization": "daebubun",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "大部分",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0591",
+      "hangul": "대사관",
+      "romanization": "daesagwan",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "大使馆",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0592",
+      "hangul": "대학",
+      "romanization": "daehak",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "大学",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0593",
+      "hangul": "대학교",
+      "romanization": "daehakgyo",
+      "pronounced": "[대학꾜]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "大学",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0594",
+      "hangul": "대학생",
+      "romanization": "daehaksaeng",
+      "pronounced": "[대학쌩]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "大学生",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0595",
+      "hangul": "대학원",
+      "romanization": "daehagwon",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "研究生院",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0596",
+      "hangul": "대화",
+      "romanization": "daehwa",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "对话，交谈",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0597",
+      "hangul": "대회",
+      "romanization": "daehoe",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "大赛，比赛",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0598",
+      "hangul": "댁",
+      "romanization": "daek",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "府上，家（敬语）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0599",
+      "hangul": "더",
+      "romanization": "deo",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "更，再",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0600",
+      "hangul": "더럽다",
+      "romanization": "deoreopda",
+      "pronounced": "[더럽따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "脏",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0601",
+      "hangul": "더욱",
+      "romanization": "deouk",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "更加",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0602",
+      "hangul": "덕분",
+      "romanization": "deokbun",
+      "pronounced": "[덕뿐]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "多亏，托……的福",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0603",
+      "hangul": "던지다",
+      "romanization": "deonjida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "扔，投",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0604",
+      "hangul": "데려가다",
+      "romanization": "deryeogada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "带走（人）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0605",
+      "hangul": "데려오다",
+      "romanization": "deryeooda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "带来（人）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0606",
+      "hangul": "데이트",
+      "romanization": "deiteu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "约会",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0607",
+      "hangul": "도",
+      "romanization": "do",
+      "soundChange": null,
+      "pos": "依存名词",
+      "meaning": "度（量词）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0608",
+      "hangul": "도로",
+      "romanization": "doro",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "道路，马路",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0609",
+      "hangul": "도시",
+      "romanization": "dosi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "城市",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0610",
+      "hangul": "도와주다",
+      "romanization": "dowajuda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "帮助",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0611",
+      "hangul": "도움",
+      "romanization": "doum",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "帮助",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0612",
+      "hangul": "도착",
+      "romanization": "dochak",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "到达",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0613",
+      "hangul": "독서",
+      "romanization": "dokseo",
+      "pronounced": "[독써]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "读书，阅读",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0614",
+      "hangul": "독일",
+      "romanization": "dogil",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "德国",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0615",
+      "hangul": "돈가스",
+      "romanization": "dongaseu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "炸猪排",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0616",
+      "hangul": "돌",
+      "romanization": "dol",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "石头",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0617",
+      "hangul": "돌다",
+      "romanization": "dolda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "转，转动",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0618",
+      "hangul": "돌려주다",
+      "romanization": "dolryeojuda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "归还",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0619",
+      "hangul": "돌리다",
+      "romanization": "dolrida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "转动",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0620",
+      "hangul": "돌아가다",
+      "romanization": "doragada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "回去",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0621",
+      "hangul": "돌아오다",
+      "romanization": "doraoda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "回来",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0622",
+      "hangul": "돕다",
+      "romanization": "dopda",
+      "pronounced": "[돕따]",
+      "soundChange": "tensification",
+      "pos": "动词",
+      "meaning": "帮助",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0623",
+      "hangul": "동네",
+      "romanization": "dongne",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "小区，街坊",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0624",
+      "hangul": "동물",
+      "romanization": "dongmul",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "动物",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0625",
+      "hangul": "동물원",
+      "romanization": "dongmurwon",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "动物园",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0626",
+      "hangul": "동시",
+      "romanization": "dongsi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "同时",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0627",
+      "hangul": "동안",
+      "romanization": "dongan",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "期间，……的时候",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0628",
+      "hangul": "동전",
+      "romanization": "dongjeon",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "硬币",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0629",
+      "hangul": "동쪽",
+      "romanization": "dongjjok",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "东边，东方",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0630",
+      "hangul": "돼지",
+      "romanization": "dwaeji",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "猪",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0631",
+      "hangul": "돼지고기",
+      "romanization": "dwaejigogi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "猪肉",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0632",
+      "hangul": "되다",
+      "romanization": "doeda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "成为，变成",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0633",
+      "hangul": "된장",
+      "romanization": "doenjang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "大酱，黄豆酱",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0634",
+      "hangul": "된장찌개",
+      "romanization": "doenjangjjigae",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "大酱汤",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0635",
+      "hangul": "두",
+      "romanization": "du",
+      "soundChange": null,
+      "pos": "冠词",
+      "meaning": "两（个）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0636",
+      "hangul": "두껍다",
+      "romanization": "dukkeopda",
+      "pronounced": "[두껍따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "厚",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0637",
+      "hangul": "두다",
+      "romanization": "duda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "放，摆",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0638",
+      "hangul": "두부",
+      "romanization": "dubu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "豆腐",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0639",
+      "hangul": "두세",
+      "romanization": "duse",
+      "soundChange": null,
+      "pos": "冠词",
+      "meaning": "两三（个）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0640",
+      "hangul": "두통",
+      "romanization": "dutong",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "头痛",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0641",
+      "hangul": "둘째",
+      "romanization": "duljjae",
+      "soundChange": null,
+      "pos": "数词",
+      "meaning": "第二",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0642",
+      "hangul": "뒤",
+      "romanization": "dwi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "后面",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0643",
+      "hangul": "뒤쪽",
+      "romanization": "dwijjok",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "后面，后方",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0644",
+      "hangul": "드디어",
+      "romanization": "deudieo",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "终于",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0645",
+      "hangul": "드라마",
+      "romanization": "deurama",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "电视剧",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0646",
+      "hangul": "드리다",
+      "romanization": "deurida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "给（敬语），献上",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0647",
+      "hangul": "들다",
+      "romanization": "deulda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "拿；花费；进入",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0648",
+      "hangul": "들르다",
+      "romanization": "deulreuda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "顺便去，路过",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0649",
+      "hangul": "들리다",
+      "romanization": "deulrida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "听见",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0650",
+      "hangul": "들어가다",
+      "romanization": "deureogada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "进去",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0651",
+      "hangul": "들어오다",
+      "romanization": "deureooda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "进来",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0652",
+      "hangul": "등",
+      "romanization": "deung",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "等等；背",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0653",
+      "hangul": "등산",
+      "romanization": "deungsan",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "登山，爬山",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0654",
+      "hangul": "디자인",
+      "romanization": "dijain",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "设计",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0655",
+      "hangul": "따로",
+      "romanization": "ttaro",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "另外，单独",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0656",
+      "hangul": "딸기",
+      "romanization": "ttalgi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "草莓",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0657",
+      "hangul": "땀",
+      "romanization": "ttam",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "汗",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0658",
+      "hangul": "땅",
+      "romanization": "ttang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "土地，地",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0659",
+      "hangul": "때",
+      "romanization": "ttae",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "时候",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0660",
+      "hangul": "떠나다",
+      "romanization": "tteonada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "离开",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0661",
+      "hangul": "떠들다",
+      "romanization": "tteodeulda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "吵闹，喧哗",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0662",
+      "hangul": "떡",
+      "romanization": "tteok",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "年糕，糕",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0663",
+      "hangul": "떡국",
+      "romanization": "tteokguk",
+      "pronounced": "[떡꾹]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "年糕汤",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0664",
+      "hangul": "떡볶이",
+      "romanization": "tteokbokki",
+      "pronounced": "[떡뽂이]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "炒年糕",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0665",
+      "hangul": "떨어지다",
+      "romanization": "tteoreojida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "掉落，落下",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0666",
+      "hangul": "또는",
+      "romanization": "ttoneun",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "或者",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0667",
+      "hangul": "똑같다",
+      "romanization": "ttokgatda",
+      "pronounced": "[똑깓따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "完全一样",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0668",
+      "hangul": "똑같이",
+      "romanization": "ttokgati",
+      "pronounced": "[똑깥이]",
+      "soundChange": "tensification",
+      "pos": "副词",
+      "meaning": "一样地，同样地",
       "level": "TOPIK1"
     }
   ]
