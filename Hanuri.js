@@ -269,6 +269,7 @@ const InteractView = {
       "</div></div>\n" +
       "<script>\n" +
       "var DATA = " + dataJson + ";\n" +
+      "var RATE = { normal: 1, slow: 0.5, example: 0.8 };\n" +
       "function q(s){ return document.querySelector(s); }\n" +
       "function esc(s){ return (s==null?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\"/g,'&quot;'); }\n" +
       "function getList(g){ return g==='today' ? DATA.today : (DATA.yesterday ? DATA.yesterday.words : []); }\n" +
@@ -277,8 +278,8 @@ const InteractView = {
       "  var u = new SpeechSynthesisUtterance(text); u.lang='ko-KR'; u.rate = rate;\n" +
       "  speechSynthesis.cancel(); speechSynthesis.speak(u);\n" +
       "}\n" +
-      "function sayWord(g,i,slow){ var w=getList(g)[i]; if(w) speak(w.hangul, slow?0.5:1); }\n" +
-      "function sayExample(g,i){ var w=getList(g)[i]; if(w) speak(w.example,1); }\n" +
+      "function sayWord(g,i,slow){ var w=getList(g)[i]; if(w) speak(w.hangul, slow?RATE.slow:RATE.normal); }\n" +
+      "function sayExample(g,i){ var w=getList(g)[i]; if(w) speak(w.example, RATE.example); }\n" +
       "function speakAll(){\n" +
       "  if(!('speechSynthesis' in window)) return;\n" +
       "  speechSynthesis.cancel();\n" +
