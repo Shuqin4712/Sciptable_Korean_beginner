@@ -3234,7 +3234,7 @@ const VOCAB = {
       "level": "TOPIK1"
     }
   ]
-}};
+};
 
 const fm = (() => {
   try { return FileManager.iCloud(); } catch (e) { return FileManager.local(); }
