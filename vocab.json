@@ -2,7 +2,7 @@
   "meta": {
     "name": "TOPIK I 高频核心词库",
     "version": 3,
-    "count": 398
+    "count": 535
   },
   "words": [
     {
@@ -4126,6 +4126,1261 @@
       "soundChange": null,
       "pos": "副词",
       "meaning": "就那样，只是",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0399",
+      "hangul": "그대로",
+      "romanization": "geudaero",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "就那样，原样",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0400",
+      "hangul": "그동안",
+      "romanization": "geudongan",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "这段时间，一直以来",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0401",
+      "hangul": "그때",
+      "romanization": "geuttae",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "那时",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0402",
+      "hangul": "그래",
+      "romanization": "geurae",
+      "soundChange": null,
+      "pos": "叹词",
+      "meaning": "好，是啊",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0403",
+      "hangul": "그러나",
+      "romanization": "geureona",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "但是，然而",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0404",
+      "hangul": "그러니까",
+      "romanization": "geureonikka",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "所以，就是说",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0405",
+      "hangul": "그러면",
+      "romanization": "geureomyeon",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "那么，那样的话",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0406",
+      "hangul": "그러므로",
+      "romanization": "geureomeuro",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "因此",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0407",
+      "hangul": "그런",
+      "romanization": "geureon",
+      "soundChange": null,
+      "pos": "冠词",
+      "meaning": "那样的",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0408",
+      "hangul": "그런데",
+      "romanization": "geureonde",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "可是，不过",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0409",
+      "hangul": "그럼",
+      "romanization": "geureom",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "那么",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0410",
+      "hangul": "그렇다",
+      "romanization": "geureotda",
+      "pronounced": "[그러타]",
+      "soundChange": "aspiration",
+      "pos": "形容词",
+      "meaning": "是那样，对",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0411",
+      "hangul": "그렇지만",
+      "romanization": "geureotjiman",
+      "pronounced": "[그러치만]",
+      "soundChange": "aspiration",
+      "pos": "副词",
+      "meaning": "但是，可是",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0412",
+      "hangul": "그릇",
+      "romanization": "geureut",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "碗，容器",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0413",
+      "hangul": "그리고",
+      "romanization": "geurigo",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "而且，还有",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0414",
+      "hangul": "그리다",
+      "romanization": "geurida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "画",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0415",
+      "hangul": "그림",
+      "romanization": "geurim",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "画，图画",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0416",
+      "hangul": "그립다",
+      "romanization": "geuripda",
+      "pronounced": "[그립따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "想念，怀念",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0417",
+      "hangul": "그만",
+      "romanization": "geuman",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "到此为止，别再",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0418",
+      "hangul": "그만두다",
+      "romanization": "geumanduda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "停止，辞去",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0419",
+      "hangul": "그분",
+      "romanization": "geubun",
+      "soundChange": null,
+      "pos": "代词",
+      "meaning": "那位",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0420",
+      "hangul": "그저께",
+      "romanization": "geujeokke",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "前天",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0421",
+      "hangul": "그쪽",
+      "romanization": "geujjok",
+      "soundChange": null,
+      "pos": "代词",
+      "meaning": "那边",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0422",
+      "hangul": "그치다",
+      "romanization": "geuchida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "停，停止",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0423",
+      "hangul": "극장",
+      "romanization": "geukjang",
+      "pronounced": "[극짱]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "剧场，电影院",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0424",
+      "hangul": "근처",
+      "romanization": "geuncheo",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "附近",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0425",
+      "hangul": "글",
+      "romanization": "geul",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "文章，文字",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0426",
+      "hangul": "글쎄",
+      "romanization": "geulsse",
+      "soundChange": null,
+      "pos": "叹词",
+      "meaning": "这个嘛，不好说",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0427",
+      "hangul": "글쎄요",
+      "romanization": "geulsseyo",
+      "soundChange": null,
+      "pos": "叹词",
+      "meaning": "这个嘛，不太清楚",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0428",
+      "hangul": "글씨",
+      "romanization": "geulssi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "字，字迹",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0429",
+      "hangul": "글자",
+      "romanization": "geulja",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "字，文字",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0430",
+      "hangul": "금방",
+      "romanization": "geumbang",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "刚才；马上",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0431",
+      "hangul": "금지",
+      "romanization": "geumji",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "禁止",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0432",
+      "hangul": "급하다",
+      "romanization": "geuphada",
+      "pronounced": "[그파다]",
+      "soundChange": "aspiration",
+      "pos": "形容词",
+      "meaning": "急，紧急",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0433",
+      "hangul": "기간",
+      "romanization": "gigan",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "期间",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0434",
+      "hangul": "기르다",
+      "romanization": "gireuda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "养，培养",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0435",
+      "hangul": "기름",
+      "romanization": "gireum",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "油",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0436",
+      "hangul": "기말시험",
+      "romanization": "gimalsiheom",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "期末考试",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0437",
+      "hangul": "기분",
+      "romanization": "gibun",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "心情",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0438",
+      "hangul": "기뻐하다",
+      "romanization": "gippeohada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "高兴，欢喜",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0439",
+      "hangul": "기쁘다",
+      "romanization": "gippeuda",
+      "soundChange": null,
+      "pos": "形容词",
+      "meaning": "高兴",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0440",
+      "hangul": "기쁨",
+      "romanization": "gippeum",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "喜悦，快乐",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0441",
+      "hangul": "기숙사",
+      "romanization": "gisuksa",
+      "pronounced": "[기숙싸]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "宿舍",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0442",
+      "hangul": "기억",
+      "romanization": "gieok",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "记忆",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0443",
+      "hangul": "기억나다",
+      "romanization": "gieoknada",
+      "pronounced": "[기엉나다]",
+      "soundChange": "nasalization",
+      "pos": "动词",
+      "meaning": "想起，记起",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0444",
+      "hangul": "기온",
+      "romanization": "gion",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "气温",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0445",
+      "hangul": "기자",
+      "romanization": "gija",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "记者",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0446",
+      "hangul": "기차",
+      "romanization": "gicha",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "火车",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0447",
+      "hangul": "기차역",
+      "romanization": "gichayeok",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "火车站",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0448",
+      "hangul": "기차표",
+      "romanization": "gichapyo",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "火车票",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0449",
+      "hangul": "기침",
+      "romanization": "gichim",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "咳嗽",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0450",
+      "hangul": "기타",
+      "romanization": "gita",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "其他；吉他",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0451",
+      "hangul": "기회",
+      "romanization": "gihoe",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "机会",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0452",
+      "hangul": "긴장",
+      "romanization": "ginjang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "紧张",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0453",
+      "hangul": "길",
+      "romanization": "gil",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "路，道路",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0454",
+      "hangul": "길이",
+      "romanization": "giri",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "长度",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0455",
+      "hangul": "김",
+      "romanization": "gim",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "紫菜，海苔",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0456",
+      "hangul": "김밥",
+      "romanization": "gimbap",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "紫菜包饭",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0457",
+      "hangul": "김치찌개",
+      "romanization": "gimchijjigae",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "泡菜汤",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0458",
+      "hangul": "깊다",
+      "romanization": "gipda",
+      "pronounced": "[깁따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "深",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0459",
+      "hangul": "깊이",
+      "romanization": "gipi",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "深深地",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0460",
+      "hangul": "까만색",
+      "romanization": "kkamansaek",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "黑色",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0461",
+      "hangul": "까맣다",
+      "romanization": "kkamatda",
+      "pronounced": "[까마타]",
+      "soundChange": "aspiration",
+      "pos": "形容词",
+      "meaning": "黑",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0462",
+      "hangul": "깎다",
+      "romanization": "kkakda",
+      "pronounced": "[깍따]",
+      "soundChange": "tensification",
+      "pos": "动词",
+      "meaning": "削；砍（价）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0463",
+      "hangul": "깜짝",
+      "romanization": "kkamjjak",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "吓一跳地",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0464",
+      "hangul": "깨끗이",
+      "romanization": "kkaekkeusi",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "干净地",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0465",
+      "hangul": "깨끗하다",
+      "romanization": "kkaekkeuthada",
+      "soundChange": null,
+      "pos": "形容词",
+      "meaning": "干净",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0466",
+      "hangul": "깨다",
+      "romanization": "kkaeda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "醒；打碎",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0467",
+      "hangul": "꺼내다",
+      "romanization": "kkeonaeda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "拿出，取出",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0468",
+      "hangul": "껌",
+      "romanization": "kkeom",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "口香糖",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0469",
+      "hangul": "꼭",
+      "romanization": "kkok",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "一定，务必",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0470",
+      "hangul": "꽃다발",
+      "romanization": "kkotdabal",
+      "pronounced": "[꼳따발]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "花束",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0471",
+      "hangul": "꽃병",
+      "romanization": "kkotbyeong",
+      "pronounced": "[꼳뼝]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "花瓶",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0472",
+      "hangul": "꽃집",
+      "romanization": "kkotjip",
+      "pronounced": "[꼳찝]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "花店",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0473",
+      "hangul": "꾸다",
+      "romanization": "kkuda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "做（梦）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0474",
+      "hangul": "꿈",
+      "romanization": "kkum",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "梦",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0475",
+      "hangul": "끄다",
+      "romanization": "kkeuda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "关（灯／电源）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0476",
+      "hangul": "끊다",
+      "romanization": "kkeunda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "戒；挂断",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0477",
+      "hangul": "끓다",
+      "romanization": "kkeulda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "沸腾，开",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0478",
+      "hangul": "끓이다",
+      "romanization": "kkeulida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "煮，烧开",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0479",
+      "hangul": "끝",
+      "romanization": "kkeut",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "结束，末尾",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0480",
+      "hangul": "끝내다",
+      "romanization": "kkeutnaeda",
+      "pronounced": "[끈내다]",
+      "soundChange": "nasalization",
+      "pos": "动词",
+      "meaning": "结束，完成",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0481",
+      "hangul": "끼다",
+      "romanization": "kkida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "戴（戒指）；起（雾）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0482",
+      "hangul": "나가다",
+      "romanization": "nagada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "出去",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0483",
+      "hangul": "나누다",
+      "romanization": "nanuda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "分，分享",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0484",
+      "hangul": "나다",
+      "romanization": "nada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "长出，产生，发生",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0485",
+      "hangul": "나머지",
+      "romanization": "nameoji",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "剩下的，其余",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0486",
+      "hangul": "나오다",
+      "romanization": "naoda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "出来",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0487",
+      "hangul": "나이",
+      "romanization": "nai",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "年龄",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0488",
+      "hangul": "나중",
+      "romanization": "najung",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "以后，之后",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0489",
+      "hangul": "나타나다",
+      "romanization": "natanada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "出现",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0490",
+      "hangul": "나흘",
+      "romanization": "naheul",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "四天",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0491",
+      "hangul": "낚시",
+      "romanization": "naksi",
+      "pronounced": "[낙씨]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "钓鱼",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0492",
+      "hangul": "날",
+      "romanization": "nal",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "日子，天",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0493",
+      "hangul": "날다",
+      "romanization": "nalda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "飞",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0494",
+      "hangul": "날씬하다",
+      "romanization": "nalssinhada",
+      "soundChange": null,
+      "pos": "形容词",
+      "meaning": "苗条",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0495",
+      "hangul": "날아다니다",
+      "romanization": "naradanida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "飞来飞去",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0496",
+      "hangul": "날짜",
+      "romanization": "naljja",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "日期",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0497",
+      "hangul": "남",
+      "romanization": "nam",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "别人，他人",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0498",
+      "hangul": "남기다",
+      "romanization": "namgida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "留下，剩下",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0499",
+      "hangul": "남다",
+      "romanization": "namda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "剩，剩下",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0500",
+      "hangul": "남동생",
+      "romanization": "namdongsaeng",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "弟弟",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0501",
+      "hangul": "남성",
+      "romanization": "namseong",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "男性",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0502",
+      "hangul": "남쪽",
+      "romanization": "namjjok",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "南边，南方",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0503",
+      "hangul": "남편",
+      "romanization": "nampyeon",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "丈夫",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0504",
+      "hangul": "남학생",
+      "romanization": "namhaksaeng",
+      "pronounced": "[남학쌩]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "男学生",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0505",
+      "hangul": "낫다",
+      "romanization": "natda",
+      "pronounced": "[낟따]",
+      "soundChange": "tensification",
+      "pos": "动词",
+      "meaning": "痊愈；更好",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0506",
+      "hangul": "낮",
+      "romanization": "nat",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "白天，中午",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0507",
+      "hangul": "낮다",
+      "romanization": "natda",
+      "pronounced": "[낟따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "低",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0508",
+      "hangul": "낮잠",
+      "romanization": "natjam",
+      "pronounced": "[낟짬]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "午觉",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0509",
+      "hangul": "내",
+      "romanization": "nae",
+      "soundChange": null,
+      "pos": "代词",
+      "meaning": "我的",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0510",
+      "hangul": "내과",
+      "romanization": "naegwa",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "内科",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0511",
+      "hangul": "내년",
+      "romanization": "naenyeon",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "明年",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0512",
+      "hangul": "내다",
+      "romanization": "naeda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "交，出（钱／题）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0513",
+      "hangul": "내려가다",
+      "romanization": "naeryeogada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "下去",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0514",
+      "hangul": "내려오다",
+      "romanization": "naeryeooda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "下来",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0515",
+      "hangul": "내리다",
+      "romanization": "naerida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "下（车／雨）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0516",
+      "hangul": "내용",
+      "romanization": "naeyong",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "内容",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0517",
+      "hangul": "냄비",
+      "romanization": "naembi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "锅",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0518",
+      "hangul": "냄새",
+      "romanization": "naemsae",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "气味，味道",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0519",
+      "hangul": "냉면",
+      "romanization": "naengmyeon",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "冷面",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0520",
+      "hangul": "냉장고",
+      "romanization": "naengjanggo",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "冰箱",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0521",
+      "hangul": "너희",
+      "romanization": "neohui",
+      "soundChange": null,
+      "pos": "代词",
+      "meaning": "你们",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0522",
+      "hangul": "넓다",
+      "romanization": "neolda",
+      "soundChange": null,
+      "pos": "形容词",
+      "meaning": "宽，宽敞",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0523",
+      "hangul": "넘다",
+      "romanization": "neomda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "超过，越过",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0524",
+      "hangul": "넘어지다",
+      "romanization": "neomeojida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "摔倒，跌倒",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0525",
+      "hangul": "넣다",
+      "romanization": "neotda",
+      "pronounced": "[너타]",
+      "soundChange": "aspiration",
+      "pos": "动词",
+      "meaning": "放入，装入",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0526",
+      "hangul": "넥타이",
+      "romanization": "nektai",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "领带",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0527",
+      "hangul": "넷째",
+      "romanization": "netjjae",
+      "soundChange": null,
+      "pos": "数词",
+      "meaning": "第四",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0528",
+      "hangul": "노란색",
+      "romanization": "noransaek",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "黄色",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0529",
+      "hangul": "노랗다",
+      "romanization": "noratda",
+      "pronounced": "[노라타]",
+      "soundChange": "aspiration",
+      "pos": "形容词",
+      "meaning": "黄",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0530",
+      "hangul": "노래",
+      "romanization": "norae",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "歌，歌曲",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0531",
+      "hangul": "노래방",
+      "romanization": "noraebang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "练歌房，KTV",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0532",
+      "hangul": "노력",
+      "romanization": "noryeok",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "努力",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0533",
+      "hangul": "노인",
+      "romanization": "noin",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "老人",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0534",
+      "hangul": "노트",
+      "romanization": "noteu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "笔记本",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0535",
+      "hangul": "녹색",
+      "romanization": "noksaek",
+      "pronounced": "[녹쌕]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "绿色",
       "level": "TOPIK1"
     }
   ]
