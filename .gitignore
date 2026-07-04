@@ -13,3 +13,4 @@ Thumbs.db
 .vocab_src.json
 .batch_cn.json
 .build_batch.py
+.gen_setup.py
