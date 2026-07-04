@@ -2,7 +2,7 @@
   "meta": {
     "name": "TOPIK I 高频核心词库",
     "version": 3,
-    "count": 668
+    "count": 810
   },
   "words": [
     {
@@ -6597,6 +6597,1310 @@
       "soundChange": "tensification",
       "pos": "副词",
       "meaning": "一样地，同样地",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0669",
+      "hangul": "또",
+      "romanization": "tto",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "又，再",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0670",
+      "hangul": "똑똑하다",
+      "romanization": "ttokttokhada",
+      "pronounced": "[똑또카다]",
+      "soundChange": "aspiration",
+      "pos": "形容词",
+      "meaning": "聪明",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0671",
+      "hangul": "똑바로",
+      "romanization": "ttokbaro",
+      "pronounced": "[똑빠로]",
+      "soundChange": "tensification",
+      "pos": "副词",
+      "meaning": "笔直地，端正地",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0672",
+      "hangul": "뚱뚱하다",
+      "romanization": "ttungttunghada",
+      "soundChange": null,
+      "pos": "形容词",
+      "meaning": "胖",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0673",
+      "hangul": "뛰다",
+      "romanization": "ttwida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "跑，跳",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0674",
+      "hangul": "뛰어가다",
+      "romanization": "ttwieogada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "跑过去",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0675",
+      "hangul": "뜨겁다",
+      "romanization": "tteugeopda",
+      "pronounced": "[뜨겁따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "烫，热",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0676",
+      "hangul": "뜨다",
+      "romanization": "tteuda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "升起；睁（眼）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0677",
+      "hangul": "뜻",
+      "romanization": "tteut",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "意思，含义",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0678",
+      "hangul": "라디오",
+      "romanization": "radio",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "收音机",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0679",
+      "hangul": "라면",
+      "romanization": "ramyeon",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "拉面，方便面",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0680",
+      "hangul": "러시아",
+      "romanization": "reosia",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "俄罗斯",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0681",
+      "hangul": "레스토랑",
+      "romanization": "reseutorang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "餐厅，西餐厅",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0682",
+      "hangul": "마당",
+      "romanization": "madang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "院子",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0683",
+      "hangul": "마르다",
+      "romanization": "mareuda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "干；瘦",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0684",
+      "hangul": "마리",
+      "romanization": "mari",
+      "soundChange": null,
+      "pos": "依存名词",
+      "meaning": "只／头（量词）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0685",
+      "hangul": "마을",
+      "romanization": "maeul",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "村庄，村子",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0686",
+      "hangul": "마음",
+      "romanization": "maeum",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "心，心意",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0687",
+      "hangul": "마중",
+      "romanization": "majung",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "迎接",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0688",
+      "hangul": "마지막",
+      "romanization": "majimak",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "最后",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0689",
+      "hangul": "마치다",
+      "romanization": "machida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "结束，完成",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0690",
+      "hangul": "마트",
+      "romanization": "mateu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "超市",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0691",
+      "hangul": "마흔",
+      "romanization": "maheun",
+      "soundChange": null,
+      "pos": "数词",
+      "meaning": "四十",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0692",
+      "hangul": "막걸리",
+      "romanization": "makgeolri",
+      "pronounced": "[막껄리]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "米酒，马格利酒",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0693",
+      "hangul": "막히다",
+      "romanization": "makhida",
+      "pronounced": "[마키다]",
+      "soundChange": "aspiration",
+      "pos": "动词",
+      "meaning": "堵，堵塞",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0694",
+      "hangul": "만두",
+      "romanization": "mandu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "饺子，包子",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0695",
+      "hangul": "만약",
+      "romanization": "manyak",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "万一，如果",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0696",
+      "hangul": "만일",
+      "romanization": "manil",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "万一，如果",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0697",
+      "hangul": "만지다",
+      "romanization": "manjida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "摸，触摸",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0698",
+      "hangul": "만화",
+      "romanization": "manhwa",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "漫画",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0699",
+      "hangul": "말",
+      "romanization": "mal",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "话；语言",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0700",
+      "hangul": "말다",
+      "romanization": "malda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "别，不要（做）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0701",
+      "hangul": "말레이시아",
+      "romanization": "malreisia",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "马来西亚",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0702",
+      "hangul": "말씀",
+      "romanization": "malsseum",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "话（敬语）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0703",
+      "hangul": "맑다",
+      "romanization": "makda",
+      "pronounced": "[막따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "晴朗，清澈",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0704",
+      "hangul": "맛",
+      "romanization": "mat",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "味道",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0705",
+      "hangul": "맛없다",
+      "romanization": "maseopda",
+      "pronounced": "[맛업따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "难吃",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0706",
+      "hangul": "맞다",
+      "romanization": "matda",
+      "pronounced": "[맏따]",
+      "soundChange": "tensification",
+      "pos": "动词",
+      "meaning": "对，正确；合适",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0707",
+      "hangul": "맞추다",
+      "romanization": "matchuda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "对准；使符合",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0708",
+      "hangul": "매년",
+      "romanization": "maenyeon",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "每年",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0709",
+      "hangul": "매다",
+      "romanization": "maeda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "系，绑",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0710",
+      "hangul": "매달",
+      "romanization": "maedal",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "每月",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0711",
+      "hangul": "매우",
+      "romanization": "maeu",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "非常",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0712",
+      "hangul": "매일",
+      "romanization": "maeil",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "每天",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0713",
+      "hangul": "매주",
+      "romanization": "maeju",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "每周",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0714",
+      "hangul": "매표소",
+      "romanization": "maepyoso",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "售票处",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0715",
+      "hangul": "맥주",
+      "romanization": "maekju",
+      "pronounced": "[맥쭈]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "啤酒",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0716",
+      "hangul": "맵다",
+      "romanization": "maepda",
+      "pronounced": "[맵따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "辣",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0717",
+      "hangul": "머리카락",
+      "romanization": "meorikarak",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "头发",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0718",
+      "hangul": "멀리",
+      "romanization": "meolri",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "远远地",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0719",
+      "hangul": "멈추다",
+      "romanization": "meomchuda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "停止，停下",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0720",
+      "hangul": "멋",
+      "romanization": "meot",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "帅气，风度",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0721",
+      "hangul": "멋있다",
+      "romanization": "meositda",
+      "pronounced": "[멋읻따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "帅，好看",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0722",
+      "hangul": "메뉴",
+      "romanization": "menyu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "菜单",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0723",
+      "hangul": "메다",
+      "romanization": "meda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "背，扛",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0724",
+      "hangul": "메모",
+      "romanization": "memo",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "便条，记录",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0725",
+      "hangul": "메시지",
+      "romanization": "mesiji",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "信息，短信",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0726",
+      "hangul": "메일",
+      "romanization": "meil",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "邮件",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0727",
+      "hangul": "며칠",
+      "romanization": "myeochil",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "几天，几号",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0728",
+      "hangul": "명",
+      "romanization": "myeong",
+      "soundChange": null,
+      "pos": "依存名词",
+      "meaning": "名（量词）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0729",
+      "hangul": "명절",
+      "romanization": "myeongjeol",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "节日",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0730",
+      "hangul": "모기",
+      "romanization": "mogi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "蚊子",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0731",
+      "hangul": "모두",
+      "romanization": "modu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "全部，大家",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0732",
+      "hangul": "모든",
+      "romanization": "modeun",
+      "soundChange": null,
+      "pos": "冠词",
+      "meaning": "所有的",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0733",
+      "hangul": "모습",
+      "romanization": "moseup",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "样子，模样",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0734",
+      "hangul": "모시다",
+      "romanization": "mosida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "侍奉，陪同（敬语）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0735",
+      "hangul": "모양",
+      "romanization": "moyang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "样子，形状",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0736",
+      "hangul": "모으다",
+      "romanization": "moeuda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "收集，积攒",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0737",
+      "hangul": "모이다",
+      "romanization": "moida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "聚集，聚会",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0738",
+      "hangul": "모임",
+      "romanization": "moim",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "聚会",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0739",
+      "hangul": "모자라다",
+      "romanization": "mojarada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "不够，不足",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0740",
+      "hangul": "목",
+      "romanization": "mok",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "脖子，嗓子",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0741",
+      "hangul": "목걸이",
+      "romanization": "mokgeori",
+      "pronounced": "[목껄이]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "项链",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0742",
+      "hangul": "목도리",
+      "romanization": "mokdori",
+      "pronounced": "[목또리]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "围巾",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0743",
+      "hangul": "목소리",
+      "romanization": "moksori",
+      "pronounced": "[목쏘리]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "嗓音，声音",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0744",
+      "hangul": "목욕",
+      "romanization": "mogyok",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "洗澡",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0745",
+      "hangul": "목욕탕",
+      "romanization": "mogyoktang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "澡堂，浴池",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0746",
+      "hangul": "목적",
+      "romanization": "mokjeok",
+      "pronounced": "[목쩍]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "目的",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0747",
+      "hangul": "몸",
+      "romanization": "mom",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "身体",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0748",
+      "hangul": "못",
+      "romanization": "mot",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "不能，无法",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0749",
+      "hangul": "못생기다",
+      "romanization": "motsaenggida",
+      "pronounced": "[몯쌩기다]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "长得难看，丑",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0750",
+      "hangul": "못하다",
+      "romanization": "mothada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "做不到，不会",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0751",
+      "hangul": "몽골",
+      "romanization": "monggol",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "蒙古",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0752",
+      "hangul": "무",
+      "romanization": "mu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "萝卜",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0753",
+      "hangul": "무겁다",
+      "romanization": "mugeopda",
+      "pronounced": "[무겁따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "重",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0754",
+      "hangul": "무게",
+      "romanization": "muge",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "重量",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0755",
+      "hangul": "무궁화",
+      "romanization": "mugunghwa",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "木槿花，无穷花",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0756",
+      "hangul": "무료",
+      "romanization": "muryo",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "免费",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0757",
+      "hangul": "무릎",
+      "romanization": "mureup",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "膝盖",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0758",
+      "hangul": "무섭다",
+      "romanization": "museopda",
+      "pronounced": "[무섭따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "可怕，害怕",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0759",
+      "hangul": "무슨",
+      "romanization": "museun",
+      "soundChange": null,
+      "pos": "冠词",
+      "meaning": "什么（的）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0760",
+      "hangul": "무척",
+      "romanization": "mucheok",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "非常，十分",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0761",
+      "hangul": "문",
+      "romanization": "mun",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "门",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0762",
+      "hangul": "문제",
+      "romanization": "munje",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "问题",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0763",
+      "hangul": "문화",
+      "romanization": "munhwa",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "文化",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0764",
+      "hangul": "묻다",
+      "romanization": "mutda",
+      "pronounced": "[묻따]",
+      "soundChange": "tensification",
+      "pos": "动词",
+      "meaning": "问",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0765",
+      "hangul": "물건",
+      "romanization": "mulgeon",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "东西，物品",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0766",
+      "hangul": "물고기",
+      "romanization": "mulgogi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "鱼",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0767",
+      "hangul": "물론",
+      "romanization": "mulron",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "当然",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0768",
+      "hangul": "물어보다",
+      "romanization": "mureoboda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "问一问，打听",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0769",
+      "hangul": "미국",
+      "romanization": "miguk",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "美国",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0770",
+      "hangul": "미끄러지다",
+      "romanization": "mikkeureojida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "滑倒，打滑",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0771",
+      "hangul": "미래",
+      "romanization": "mirae",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "未来",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0772",
+      "hangul": "미리",
+      "romanization": "miri",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "提前，事先",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0773",
+      "hangul": "미술관",
+      "romanization": "misulgwan",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "美术馆",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0774",
+      "hangul": "미안",
+      "romanization": "mian",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "抱歉，对不起",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0775",
+      "hangul": "미역국",
+      "romanization": "miyeokguk",
+      "pronounced": "[미역꾹]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "海带汤",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0776",
+      "hangul": "미용실",
+      "romanization": "miyongsil",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "美发店",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0777",
+      "hangul": "미터",
+      "romanization": "miteo",
+      "soundChange": null,
+      "pos": "依存名词",
+      "meaning": "米（量词）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0778",
+      "hangul": "믿다",
+      "romanization": "mitda",
+      "pronounced": "[믿따]",
+      "soundChange": "tensification",
+      "pos": "动词",
+      "meaning": "相信",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0779",
+      "hangul": "밀가루",
+      "romanization": "milgaru",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "面粉",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0780",
+      "hangul": "밀다",
+      "romanization": "milda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "推",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0781",
+      "hangul": "밑",
+      "romanization": "mit",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "下面，底下",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0782",
+      "hangul": "바깥",
+      "romanization": "bakkat",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "外面",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0783",
+      "hangul": "바깥쪽",
+      "romanization": "bakkatjjok",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "外侧",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0784",
+      "hangul": "바꾸다",
+      "romanization": "bakkuda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "换，改变",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0785",
+      "hangul": "바뀌다",
+      "romanization": "bakkwida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "被换，改变",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0786",
+      "hangul": "바나나",
+      "romanization": "banana",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "香蕉",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0787",
+      "hangul": "바닥",
+      "romanization": "badak",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "地面，底",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0788",
+      "hangul": "바닷가",
+      "romanization": "badatga",
+      "pronounced": "[바닫까]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "海边",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0789",
+      "hangul": "바라다",
+      "romanization": "barada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "希望，盼望",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0790",
+      "hangul": "바라보다",
+      "romanization": "baraboda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "望，眺望",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0791",
+      "hangul": "바람",
+      "romanization": "baram",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "风",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0792",
+      "hangul": "바로",
+      "romanization": "baro",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "就，正是；立刻",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0793",
+      "hangul": "바르다",
+      "romanization": "bareuda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "涂，抹",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0794",
+      "hangul": "바이올린",
+      "romanization": "baiolrin",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "小提琴",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0795",
+      "hangul": "바지",
+      "romanization": "baji",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "裤子",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0796",
+      "hangul": "박물관",
+      "romanization": "bakmulgwan",
+      "pronounced": "[방물관]",
+      "soundChange": "nasalization",
+      "pos": "名词",
+      "meaning": "博物馆",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0797",
+      "hangul": "박수",
+      "romanization": "baksu",
+      "pronounced": "[박쑤]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "掌声，鼓掌",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0798",
+      "hangul": "밖",
+      "romanization": "bak",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "外面",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0799",
+      "hangul": "반",
+      "romanization": "ban",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "半；班",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0800",
+      "hangul": "반갑다",
+      "romanization": "bangapda",
+      "pronounced": "[반갑따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "高兴（见到）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0801",
+      "hangul": "반대",
+      "romanization": "bandae",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "相反；反对",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0802",
+      "hangul": "반드시",
+      "romanization": "bandeusi",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "一定，务必",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0803",
+      "hangul": "반바지",
+      "romanization": "banbaji",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "短裤",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0804",
+      "hangul": "반지",
+      "romanization": "banji",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "戒指",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0805",
+      "hangul": "반찬",
+      "romanization": "banchan",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "小菜，配菜",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0806",
+      "hangul": "받아쓰다",
+      "romanization": "badasseuda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "听写",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0807",
+      "hangul": "발가락",
+      "romanization": "balgarak",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "脚趾",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0808",
+      "hangul": "발바닥",
+      "romanization": "balbadak",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "脚底，脚掌",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0809",
+      "hangul": "밝다",
+      "romanization": "bakda",
+      "pronounced": "[박따]",
+      "soundChange": "tensification",
+      "pos": "动词",
+      "meaning": "亮，明亮",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0810",
+      "hangul": "방금",
+      "romanization": "banggeum",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "刚才",
       "level": "TOPIK1"
     }
   ]
