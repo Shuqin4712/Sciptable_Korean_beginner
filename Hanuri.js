@@ -53,6 +53,7 @@ function hangulWithMark(word) {
 // -----------------------------------------------------------------------------
 const WidgetView = {
   build(words, family) {
+    if (!words || !words.length) return this.buildError("今日没有可显示的单词。");
     const fam = family || "medium";
     if (fam === "small") return this._buildSmall(words);
     return this._buildMedium(words); // medium / large 都用 medium 布局
@@ -344,40 +345,41 @@ const InteractView = {
 // main —— 入口分发
 // -----------------------------------------------------------------------------
 async function main() {
-  let words, vocab, finalState;
+  // 单一 try/catch 覆盖「加载 + 渲染/交互」全流程，确保任何异常都被兜底，
+  // 不向 Scriptable 抛出未捕获错误（验收标准 #5）。
   try {
-    vocab = await Store.loadVocab();
+    const vocab = await Store.loadVocab();
     const state = await Store.loadState();
     const today = formatDate(new Date());
     const res = Scheduler.getTodayWords(vocab, state, today);
-    words = res.words;
-    finalState = res.state;
+    const words = res.words;
     if (res.changed) Store.saveState(res.state); // 仅跨天/首次时写盘，保证幂等
-  } catch (e) {
-    // 词库缺失或损坏：组件显示兜底提示，App 内弹 Alert 引导运行 setup
+    if (!words || !words.length) {
+      throw new Error("今日没有可显示的单词，词库可能为空。");
+    }
+
     if (config.runsInWidget) {
-      const ew = WidgetView.buildError("请先运行 setup 脚本安装词库，或检查 vocab.json。");
-      Script.setWidget(ew);
+      const family = config.widgetFamily || "medium";
+      const widget = WidgetView.build(words, family);
+      widget.url = URLScheme.forRunningScript(); // 点击组件跳回本脚本
+      widget.refreshAfterDate = nextMidnight(); // 建议在次日零点后刷新（系统不保证准点）
+      Script.setWidget(widget);
+    } else {
+      // App 内运行（点击组件跳转而来）：打开 WebView 听读界面
+      await InteractView.present(words, vocab, res.state);
+    }
+  } catch (e) {
+    // 词库缺失/损坏、或渲染出错：组件显示兜底提示，App 内弹 Alert 引导运行 setup
+    const msg = String((e && e.message) || e);
+    if (config.runsInWidget) {
+      Script.setWidget(WidgetView.buildError("请先运行 setup 脚本安装词库，或检查 vocab.json。"));
     } else {
       const a = new Alert();
-      a.title = "无法加载词库";
-      a.message = String(e.message || e);
+      a.title = "出错了";
+      a.message = msg + "\n\n若首次使用，请先运行 setup 安装词库。";
       a.addAction("好");
       await a.present();
     }
-    Script.complete();
-    return;
-  }
-
-  if (config.runsInWidget) {
-    const family = config.widgetFamily || "medium";
-    const widget = WidgetView.build(words, family);
-    widget.url = URLScheme.forRunningScript(); // 点击组件跳回本脚本
-    widget.refreshAfterDate = nextMidnight(); // 建议在次日零点后刷新（系统不保证准点）
-    Script.setWidget(widget);
-  } else {
-    // App 内运行（点击组件跳转而来）：打开 WebView 听读界面
-    await InteractView.present(words, vocab, finalState);
   }
   Script.complete();
 }

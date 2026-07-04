@@ -12,7 +12,7 @@
 | `korean-widget-design.md` | 完整设计文档（架构唯一权威） |
 | `CLAUDE.md` | 平台约束与核心原则 |
 | `stage0-probe.js` | Stage 0 环境探针（Speech / FileManager / config 分支验证，含真机探测结论） |
-| `vocab.json` | 词库（50 词，含音变标注） |
+| `vocab.json` | 词库（238 词，含音变标注） |
 | `hanuri-lib.js` | 数据层公共模块：CONFIG / Store / Scheduler（`importModule` 引入） |
 | `Hanuri.js` | 主入口：WidgetView 组件渲染（原生）+ InteractView（WebView 听读界面）+ `main()` 分发 |
 | `setup.js` | 一次性安装脚本：内嵌词库，运行后自动创建 `hanuri/` 目录并写入 `vocab.json`（由 `vocab.json` 生成，内容一致） |
@@ -53,6 +53,18 @@ Scriptable 里「脚本」和「数据文件」处理方式不同：
 - [x] Stage 1 — 数据层（50 词 `vocab.json` + Store + Scheduler + 断言测试，确定性/幂等/跨天已验证）
 - [x] Stage 2 — 组件渲染（`Hanuri.js` WidgetView，small/medium，深色渐变 + Color.dynamic，音变 ⚡）
 - [x] Stage 3 — 交互与发音（因 iOS 26 原生 TTS 无声，改为 WebView 听读界面：🔊/🐢 真·变速 + 全部朗读/停止 + 回顾昨天 + 音变解释浮层）
-- [ ] Stage 4 — 打磨（异常处理补全、边界情况、代码整理与注释）
+- [x] Stage 4 — 打磨（单一 try/catch 兜底全流程、空词库防御、词库扩至 238 词、代码整理）
 
 > 备注：Stage 3 原为原生 UITable + `Speech`，因 iOS 26 上 Scriptable 原生 TTS 实测发不出声，改用 WebView + `speechSynthesis`。桌面组件不受影响。
+
+## v1 验收（Definition of Done）
+
+| # | 标准 | 状态 |
+|---|------|------|
+| 1 | 组件显示当日词，一天内刷新不变，次日换词 | ✅ 确定性选词 + 幂等（跨天才推进 cursor） |
+| 2 | 点击组件 → 交互列表 → 逐词 🔊 听发音 | ✅ WebView 听读界面 |
+| 3 | 音变词显示 ⚡ 与实际读音，点击看解释 | ✅ ⚡ 标记 + 解释浮层 |
+| 4 | 回顾昨天可用；首次运行（无 state）不崩溃 | ✅ 默认状态自动初始化 |
+| 5 | 全程离线，无未捕获异常 | ✅ 单一 try/catch 兜底 + 空词库防御 |
+
+> 待办（backlog，v1 不做）：更像真人的增强语音（受 WKWebView `u.voice` 限制）、API 例句、SRS、真人 TTS 音频、锁屏组件、按等级筛词。
