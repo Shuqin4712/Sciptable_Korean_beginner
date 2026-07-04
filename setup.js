@@ -17,8 +17,8 @@
 const VOCAB = {
   "meta": {
     "name": "TOPIK I 高频核心词库",
-    "version": 2,
-    "count": 238
+    "version": 3,
+    "count": 298
   },
   "words": [
     {
@@ -2683,9 +2683,558 @@ const VOCAB = {
       "example": "아니요, 괜찮아요.",
       "exampleMeaning": "不，没关系。",
       "level": "TOPIK1"
+    },
+    {
+      "id": "w0239",
+      "hangul": "가격",
+      "romanization": "gagyeok",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "价格",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0240",
+      "hangul": "가구",
+      "romanization": "gagu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "家具",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0241",
+      "hangul": "가끔",
+      "romanization": "gakkeum",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "偶尔",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0242",
+      "hangul": "가늘다",
+      "romanization": "ganeulda",
+      "soundChange": null,
+      "pos": "形容词",
+      "meaning": "细",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0243",
+      "hangul": "가득",
+      "romanization": "gadeuk",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "满满地",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0244",
+      "hangul": "가리키다",
+      "romanization": "garikida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "指，指向",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0245",
+      "hangul": "가볍다",
+      "romanization": "gabyeopda",
+      "pronounced": "[가볍따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "轻",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0246",
+      "hangul": "가수",
+      "romanization": "gasu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "歌手",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0247",
+      "hangul": "가슴",
+      "romanization": "gaseum",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "胸，胸口",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0248",
+      "hangul": "가요",
+      "romanization": "gayo",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "歌曲",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0249",
+      "hangul": "가운데",
+      "romanization": "gaunde",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "中间",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0250",
+      "hangul": "가위",
+      "romanization": "gawi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "剪刀",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0251",
+      "hangul": "가을",
+      "romanization": "gaeul",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "秋天",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0252",
+      "hangul": "가장",
+      "romanization": "gajang",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "最",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0253",
+      "hangul": "가져가다",
+      "romanization": "gajyeogada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "带走，拿走",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0254",
+      "hangul": "가져오다",
+      "romanization": "gajyeooda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "带来，拿来",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0255",
+      "hangul": "가지",
+      "romanization": "gaji",
+      "soundChange": null,
+      "pos": "依存名词",
+      "meaning": "种，样（量词）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0256",
+      "hangul": "가지다",
+      "romanization": "gajida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "拥有，持有",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0257",
+      "hangul": "각각",
+      "romanization": "gakgak",
+      "pronounced": "[각깍]",
+      "soundChange": "tensification",
+      "pos": "副词",
+      "meaning": "各自，各",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0258",
+      "hangul": "간단하다",
+      "romanization": "gandanhada",
+      "soundChange": null,
+      "pos": "形容词",
+      "meaning": "简单",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0259",
+      "hangul": "간단히",
+      "romanization": "gandanhi",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "简单地",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0260",
+      "hangul": "간식",
+      "romanization": "gansik",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "零食",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0261",
+      "hangul": "간장",
+      "romanization": "ganjang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "酱油",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0262",
+      "hangul": "간호사",
+      "romanization": "ganhosa",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "护士",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0263",
+      "hangul": "갈비",
+      "romanization": "galbi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "排骨",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0264",
+      "hangul": "갈비탕",
+      "romanization": "galbitang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "排骨汤",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0265",
+      "hangul": "갈색",
+      "romanization": "galsaek",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "褐色，棕色",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0266",
+      "hangul": "갈아입다",
+      "romanization": "garaipda",
+      "pronounced": "[갈아입따]",
+      "soundChange": "tensification",
+      "pos": "动词",
+      "meaning": "换（衣服）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0267",
+      "hangul": "갈아타다",
+      "romanization": "garatada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "换乘",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0268",
+      "hangul": "감",
+      "romanization": "gam",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "柿子",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0269",
+      "hangul": "감기",
+      "romanization": "gamgi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "感冒",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0270",
+      "hangul": "감기약",
+      "romanization": "gamgiyak",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "感冒药",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0271",
+      "hangul": "감다",
+      "romanization": "gamda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "闭（眼）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0272",
+      "hangul": "감사",
+      "romanization": "gamsa",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "感谢",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0273",
+      "hangul": "감자",
+      "romanization": "gamja",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "土豆，马铃薯",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0274",
+      "hangul": "갑자기",
+      "romanization": "gapjagi",
+      "pronounced": "[갑짜기]",
+      "soundChange": "tensification",
+      "pos": "副词",
+      "meaning": "突然",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0275",
+      "hangul": "값",
+      "romanization": "gap",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "价钱",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0276",
+      "hangul": "강",
+      "romanization": "gang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "江，河",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0277",
+      "hangul": "강아지",
+      "romanization": "gangaji",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "小狗",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0278",
+      "hangul": "강하다",
+      "romanization": "ganghada",
+      "soundChange": null,
+      "pos": "形容词",
+      "meaning": "强",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0279",
+      "hangul": "갖다",
+      "romanization": "gatda",
+      "pronounced": "[갇따]",
+      "soundChange": "tensification",
+      "pos": "动词",
+      "meaning": "拿，持有",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0280",
+      "hangul": "같다",
+      "romanization": "gatda",
+      "pronounced": "[갇따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "一样，相同",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0281",
+      "hangul": "같이",
+      "romanization": "gati",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "一起",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0282",
+      "hangul": "갚다",
+      "romanization": "gapda",
+      "pronounced": "[갑따]",
+      "soundChange": "tensification",
+      "pos": "动词",
+      "meaning": "偿还，还（钱）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0283",
+      "hangul": "개",
+      "romanization": "gae",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "狗；个（量词）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0284",
+      "hangul": "개월",
+      "romanization": "gaewol",
+      "soundChange": null,
+      "pos": "依存名词",
+      "meaning": "个月（量词）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0285",
+      "hangul": "거",
+      "romanization": "geo",
+      "soundChange": null,
+      "pos": "依存名词",
+      "meaning": "东西（“것”的口语）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0286",
+      "hangul": "거기",
+      "romanization": "geogi",
+      "soundChange": null,
+      "pos": "代词",
+      "meaning": "那里",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0287",
+      "hangul": "거리",
+      "romanization": "geori",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "街道",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0288",
+      "hangul": "거실",
+      "romanization": "geosil",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "客厅",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0289",
+      "hangul": "거울",
+      "romanization": "geoul",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "镜子",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0290",
+      "hangul": "거의",
+      "romanization": "geoui",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "几乎",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0291",
+      "hangul": "거절",
+      "romanization": "geojeol",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "拒绝",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0292",
+      "hangul": "거짓말",
+      "romanization": "geojitmal",
+      "pronounced": "[거진말]",
+      "soundChange": "nasalization",
+      "pos": "名词",
+      "meaning": "谎话，谎言",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0293",
+      "hangul": "걱정",
+      "romanization": "geokjeong",
+      "pronounced": "[걱쩡]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "担心",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0294",
+      "hangul": "건강",
+      "romanization": "geongang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "健康",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0295",
+      "hangul": "건너가다",
+      "romanization": "geonneogada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "走过去，穿过",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0296",
+      "hangul": "건너다",
+      "romanization": "geonneoda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "穿过，过（马路）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0297",
+      "hangul": "건너편",
+      "romanization": "geonneopyeon",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "对面",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0298",
+      "hangul": "건물",
+      "romanization": "geonmul",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "建筑物",
+      "level": "TOPIK1"
     }
   ]
-};
+}};
 
 const fm = (() => {
   try { return FileManager.iCloud(); } catch (e) { return FileManager.local(); }

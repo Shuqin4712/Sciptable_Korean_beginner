@@ -8,3 +8,8 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# 词库导入的临时中间件（不入库）
+.vocab_src.json
+.batch_cn.json
+.build_batch.py

@@ -303,6 +303,7 @@ const InteractView = {
       "function cardHTML(g,i,w){\n" +
       "  var mark = w.soundChange ? ' <span class=\"spark\" data-act=\"info\" data-g=\"'+g+'\" data-i=\"'+i+'\">⚡</span>' : '';\n" +
       "  var pron = w.pronounced ? ' <span class=\"pron\">'+esc(w.pronounced)+'</span>' : '';\n" +
+      "  var ex = w.example ? '<div class=\"ex\" data-act=\"ex\" data-g=\"'+g+'\" data-i=\"'+i+'\">📖 '+esc(w.example)+' <span class=\"cn\">'+esc(w.exampleMeaning||'')+'</span></div>' : '';\n" +
       "  return '<div class=\"card\">'\n" +
       "    + '<div class=\"top\"><div class=\"hg\">'+esc(w.hangul)+mark+'</div>'\n" +
       "    + '<div class=\"btns\">'\n" +
@@ -311,7 +312,7 @@ const InteractView = {
       "    + '</div></div>'\n" +
       "    + '<div class=\"rom\">'+esc(w.romanization)+pron+'</div>'\n" +
       "    + '<div class=\"mean\">'+esc(w.meaning)+'</div>'\n" +
-      "    + '<div class=\"ex\" data-act=\"ex\" data-g=\"'+g+'\" data-i=\"'+i+'\">📖 '+esc(w.example)+' <span class=\"cn\">'+esc(w.exampleMeaning)+'</span></div>'\n" +
+      "    + ex\n" +
       "    + '</div>';\n" +
       "}\n" +
       "function renderList(g, el){\n" +
