@@ -14,9 +14,10 @@
 | `stage0-probe.js` | Stage 0 环境探针（Speech / FileManager / config 分支验证，含真机探测结论） |
 | `vocab.json` | 词库（50 词，含音变标注） |
 | `hanuri-lib.js` | 数据层公共模块：CONFIG / Store / Scheduler（`importModule` 引入） |
-| `Hanuri.js` | 主入口：WidgetView 组件渲染 + SpeechService + InteractView（UITable 交互）+ `main()` 分发 |
+| `Hanuri.js` | 主入口：WidgetView 组件渲染（原生）+ InteractView（WebView 听读界面）+ `main()` 分发 |
 | `setup.js` | 一次性安装脚本：内嵌词库，运行后自动创建 `hanuri/` 目录并写入 `vocab.json`（由 `vocab.json` 生成，内容一致） |
 | `test-scheduler.js` | Scheduler 断言测试（真机内运行，看 Alert 全绿即通过） |
+| `test-speech*.js` | 发音诊断脚本（定位 iOS 26 上原生 TTS 无声、验证 WebView 发音、试听语音），排障用，可选保留 |
 
 ## 安装（在 iPhone 上）
 
@@ -36,19 +37,22 @@ Scriptable 里「脚本」和「数据文件」处理方式不同：
 
 **看组件**：
 
-1. 再新建脚本命名 **`Hanuri`**，粘贴 `Hanuri.js` 内容。在 App 内点 ▶️ 运行 → 打开今日单词的交互列表（🔊 正常朗读 / 🐢 逐音节慢读 / 点击 ⚡ 行看音变解释 / 点击例句朗读 / 底部「全部朗读」「回顾昨天」）。
+1. 再新建脚本命名 **`Hanuri`**，粘贴 `Hanuri.js` 内容。在 App 内点 ▶️ 运行 → 打开 WebView 听读界面（🔊 正常朗读 / 🐢 慢速朗读 / 点击 ⚡ 看音变解释 / 点击例句朗读 / 底部「全部朗读」「停止」「回顾昨天」）。
 2. 添加到主屏幕：长按主屏空白 → ➕ → 找到 **Scriptable** → 选 small 或 medium 尺寸 → 添加后长按该组件 → **编辑小组件** → Script 选 `Hanuri`，When Interacting 选 Run Script（点击组件即跳回脚本、打开上面的交互列表）。
 
 ## 核心设计原则
 
 - **确定性选词**：当日词由「日期 + `state.json` 的 `cursor` 顺序轮换」决定，`getTodayWords` 幂等，同一天多次刷新不变词，跨天才推进 cursor。绝不 `Math.random()`。
 - **v1 完全离线**：词库打包本地 JSON。例句生成 / 真人 TTS / SRS 均在 backlog。
-- **慢速朗读 🐢**：Scriptable 的 `Speech` 无语速参数（Stage 0 已验证），采用逐音节分段排队朗读的降级方案。
+- **发音走 WebView**：Scriptable 原生 `Speech.speak` 在 iOS 26 上实测无声，改用 WebView 内的 Web Speech API（`speechSynthesis`）发声。**慢速朗读 🐢** 直接用其 `rate` 参数（0.5），真·变速。桌面组件仍为原生渲染。
+  - 已知限制：WKWebView 里 `u.voice` 切换不生效，只能用系统默认韩语音；「换更像真人的增强语音」进 backlog。
 
 ## 开发进度
 
 - [x] Stage 0 — 环境验证（Speech 无 rate 参数 → 慢速走逐音节方案；FileManager 走 iCloud）
 - [x] Stage 1 — 数据层（50 词 `vocab.json` + Store + Scheduler + 断言测试，确定性/幂等/跨天已验证）
 - [x] Stage 2 — 组件渲染（`Hanuri.js` WidgetView，small/medium，深色渐变 + Color.dynamic，音变 ⚡）
-- [x] Stage 3 — 交互与发音（UITable + SpeechService 🔊/🐢 + 全部朗读 + 回顾昨天 + 音变解释 Alert）
+- [x] Stage 3 — 交互与发音（因 iOS 26 原生 TTS 无声，改为 WebView 听读界面：🔊/🐢 真·变速 + 全部朗读/停止 + 回顾昨天 + 音变解释浮层）
 - [ ] Stage 4 — 打磨（异常处理补全、边界情况、代码整理与注释）
+
+> 备注：Stage 3 原为原生 UITable + `Speech`，因 iOS 26 上 Scriptable 原生 TTS 实测发不出声，改用 WebView + `speechSynthesis`。桌面组件不受影响。

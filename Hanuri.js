@@ -5,12 +5,16 @@
 // =============================================================================
 // Hanuri.js — HanuriWidget 主入口（组件渲染 + App 内交互双模式）
 // =============================================================================
-// 纯 Scriptable 环境：无 npm、无 DOM、无 Node。数据层来自 hanuri-lib（importModule）。
+// 纯 Scriptable 环境：无 npm、无 Node。数据层来自 hanuri-lib（importModule）。
 //
-// 当前实现范围：Stage 2 —— 桌面组件渲染（small / medium，深浅色适配）。
-//   config.runsInWidget 为真 → 渲染并 Script.setWidget。
-//   否则（在 App 内点击运行）→ presentMedium() 预览调试。
-//   Stage 3 会把 App 模式替换为 UITable 交互界面（🔊/🐢/回顾昨天）。
+// 入口分发：
+//   config.runsInWidget 为真 → 渲染桌面组件并 Script.setWidget（原生 ListWidget）。
+//   否则（App 内点击运行）→ 打开 WebView 交互界面听读。
+//
+// 发音说明：iOS 26 上 Scriptable 原生 Speech.speak 实测无声，改用 WebView 内的
+//   Web Speech API（speechSynthesis）发声，自带 rate，🐢 为真·变速慢读。桌面组件
+//   仍为原生渲染。CLAUDE.md「脚本禁 DOM」指 Scriptable 脚本上下文；WebView 内部的
+//   HTML/JS 运行在 WebKit 里，是官方支持用法，属原生 TTS 不可用时的合理降级。
 // =============================================================================
 
 const H = importModule("hanuri-lib");
@@ -45,7 +49,7 @@ function hangulWithMark(word) {
 }
 
 // -----------------------------------------------------------------------------
-// WidgetView —— 组件渲染
+// WidgetView —— 组件渲染（原生 ListWidget）
 // -----------------------------------------------------------------------------
 const WidgetView = {
   build(words, family) {
@@ -176,186 +180,162 @@ const WidgetView = {
 };
 
 // -----------------------------------------------------------------------------
-// SpeechService —— 封装 Speech（🔊 整词 / 🐢 逐音节慢读）
+// InteractView —— WebView 交互界面（HTML 页内用 speechSynthesis 发声）
 // -----------------------------------------------------------------------------
-// Stage 0 已验证：Scriptable 的 Speech 无语速参数，只有 Speech.speak(text)。
-// 慢读降级方案：把词拆成韩文音节逐个 speak，靠 utterance 之间的天然停顿制造「慢而清晰」。
-// 对有音变的词，慢读用 pronounced 的音变后形式（如 학꾜 → 학·꾜），逐音节也能听到紧音。
-const SpeechService = {
-  // 整词/整句正常朗读；跨音节的音变由系统 TTS 自然处理
-  speak(text) {
-    if (text) Speech.speak(text);
-  },
-
-  // 单词朗读：slow=false 整词一次读；slow=true 逐音节读
-  speakWord(word, slow) {
-    if (!slow) {
-      Speech.speak(word.hangul);
-      return;
-    }
-    const src = word.pronounced ? word.pronounced.replace(/[\[\]]/g, "") : word.hangul;
-    this._speakSyllables(src);
-  },
-
-  // 顺序朗读一组词（「全部朗读」）
-  speakAll(words) {
-    for (const w of words) Speech.speak(w.hangul);
-  },
-
-  // 把文本里的完成型韩文音节（U+AC00–U+D7A3）逐个排队朗读，非韩文字符跳过
-  _speakSyllables(text) {
-    const parts = [];
-    for (const ch of text) {
-      const c = ch.codePointAt(0);
-      if (c >= 0xac00 && c <= 0xd7a3) parts.push(ch);
-    }
-    if (!parts.length) {
-      Speech.speak(text);
-      return;
-    }
-    for (const p of parts) Speech.speak(p);
-  },
-};
-
-// -----------------------------------------------------------------------------
-// InteractView —— UITable 交互界面（点击听读 / 音变解释 / 全部朗读 / 回顾昨天）
-// -----------------------------------------------------------------------------
+// 每个词卡片含 🔊 正常 / 🐢 慢速(rate 0.5) 按钮；例句可点读；音变词点 ⚡ 弹解释。
+// 底部「全部朗读 / 停止 / 回顾昨天」。数据由原生侧注入页面，交互与发声都在页内完成，
+// 不回调原生。
 const InteractView = {
   async present(words, vocab, state) {
-    const table = this._buildTable(words, vocab, state);
-    await table.present(true);
+    const yesterday = Scheduler.getYesterdayWords(vocab, state); // {date, words} | null
+    const html = this._buildHTML(words, yesterday);
+    const wv = new WebView();
+    await wv.loadHTML(html);
+    await wv.present(true);
   },
 
-  _buildTable(words, vocab, state) {
-    const table = new UITable();
-    table.showSeparators = true;
-
-    const header = new UITableRow();
-    header.isHeader = true;
-    header.addCell(
-      UITableCell.text(
-        "오늘의 단어 · " + formatDate(new Date()),
-        "🔊 正常语速   🐢 逐音节慢读   ⚡ 点击查看音变"
-      )
-    );
-    table.addRow(header);
-
-    for (const w of words) this._addWordRows(table, w);
-
-    // 底部操作行
-    const allRow = new UITableRow();
-    allRow.dismissOnSelect = false;
-    const allCell = UITableCell.text("▶️ 全部朗读");
-    allCell.titleFont = Font.mediumSystemFont(17);
-    allRow.addCell(allCell);
-    allRow.onSelect = () => SpeechService.speakAll(words);
-    table.addRow(allRow);
-
-    const revRow = new UITableRow();
-    revRow.dismissOnSelect = false;
-    const revCell = UITableCell.text("📅 回顾昨天");
-    revCell.titleFont = Font.mediumSystemFont(17);
-    revRow.addCell(revCell);
-    revRow.onSelect = async () => {
-      await this._presentYesterday(vocab, state);
+  _buildHTML(today, yesterday) {
+    const data = {
+      date: formatDate(new Date()),
+      today: today,
+      yesterday: yesterday, // 可能为 null
+      info: CONFIG.soundChangeInfo,
     };
-    table.addRow(revRow);
+    // 注入 JSON 时转义 < 与行分隔符，避免破坏 <script> 或 JS 解析
+    const dataJson = JSON.stringify(data)
+      .replace(/</g, "\\u003c")
+      .replace(/\u2028/g, "\\u2028")
+      .replace(/\u2029/g, "\\u2029");
 
-    return table;
-  },
-
-  // 一个词占 4 行：韩文+按钮 / 罗马音·实际读音 / 释义 / 例句，末尾加一条空行分隔
-  _addWordRows(table, word) {
-    // 行 1：韩文（大）+ ⚡ ｜ 🔊 ｜ 🐢
-    const rowA = new UITableRow();
-    rowA.height = 54;
-    rowA.dismissOnSelect = false;
-    const hCell = UITableCell.text(hangulWithMark(word), word.pos);
-    hCell.titleFont = Font.boldSystemFont(24);
-    hCell.subtitleColor = Color.gray();
-    hCell.widthWeight = 62;
-    rowA.addCell(hCell);
-
-    const playCell = UITableCell.button("🔊");
-    playCell.widthWeight = 19;
-    playCell.centerAligned();
-    playCell.onTap = () => SpeechService.speakWord(word, false);
-    rowA.addCell(playCell);
-
-    const slowCell = UITableCell.button("🐢");
-    slowCell.widthWeight = 19;
-    slowCell.centerAligned();
-    slowCell.onTap = () => SpeechService.speakWord(word, true);
-    rowA.addCell(slowCell);
-    table.addRow(rowA);
-
-    // 行 2：罗马音 + 实际读音（有音变时点击本行看解释）
-    const rowB = new UITableRow();
-    rowB.dismissOnSelect = false;
-    const romaText = word.romanization + (word.pronounced ? "    " + word.pronounced : "");
-    const subText = word.soundChange
-      ? "⚡ " + CONFIG.soundChangeInfo[word.soundChange].label + "（点击查看）"
-      : "";
-    const bCell = UITableCell.text(romaText, subText);
-    bCell.titleFont = Font.systemFont(15);
-    bCell.titleColor = Color.gray();
-    bCell.subtitleColor = new Color("#C79A00");
-    rowB.addCell(bCell);
-    if (word.soundChange) {
-      rowB.onSelect = async () => {
-        const info = CONFIG.soundChangeInfo[word.soundChange];
-        const a = new Alert();
-        a.title = info.label;
-        a.message = word.hangul + " → " + word.pronounced + "\n\n" + info.desc;
-        a.addAction("好");
-        await a.present();
-      };
-    }
-    table.addRow(rowB);
-
-    // 行 3：释义
-    const rowC = new UITableRow();
-    rowC.dismissOnSelect = false;
-    const cCell = UITableCell.text(word.meaning);
-    cCell.titleFont = Font.systemFont(16);
-    rowC.addCell(cCell);
-    table.addRow(rowC);
-
-    // 行 4：例句（点击朗读整句）
-    const rowD = new UITableRow();
-    rowD.dismissOnSelect = false;
-    const dCell = UITableCell.text("📖 " + word.example, word.exampleMeaning);
-    dCell.titleFont = Font.systemFont(15);
-    dCell.subtitleColor = Color.gray();
-    rowD.addCell(dCell);
-    rowD.onSelect = () => SpeechService.speak(word.example);
-    table.addRow(rowD);
-
-    // 分隔空行
-    const gap = new UITableRow();
-    gap.height = 12;
-    gap.addCell(UITableCell.text(""));
-    table.addRow(gap);
-  },
-
-  async _presentYesterday(vocab, state) {
-    const y = Scheduler.getYesterdayWords(vocab, state);
-    if (!y) {
-      const a = new Alert();
-      a.title = "回顾昨天";
-      a.message = "还没有昨天的记录，明天再来看吧。";
-      a.addAction("好");
-      await a.present();
-      return;
-    }
-    const table = new UITable();
-    table.showSeparators = true;
-    const header = new UITableRow();
-    header.isHeader = true;
-    header.addCell(UITableCell.text("昨天 · " + y.date, "复习一下昨天的词"));
-    table.addRow(header);
-    for (const w of y.words) this._addWordRows(table, w);
-    await table.present(true);
+    return (
+      '<!DOCTYPE html>\n' +
+      '<html><head><meta charset="utf-8">\n' +
+      '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">\n' +
+      "<style>\n" +
+      "  :root { color-scheme: dark; }\n" +
+      "  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }\n" +
+      "  body { font-family: -apple-system, sans-serif; margin: 0; padding: 16px 16px 120px;\n" +
+      "         background: linear-gradient(160deg,#2a2350,#1c1230); color: #f3f1ff; }\n" +
+      "  h1 { font-size: 17px; margin: 4px 2px 2px; }\n" +
+      "  .sub { color: #b3a9df; font-size: 12px; margin: 0 2px 14px; }\n" +
+      "  .card { background: rgba(255,255,255,0.06); border-radius: 16px; padding: 14px 16px; margin: 10px 0; }\n" +
+      "  .top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }\n" +
+      "  .hg { font-size: 30px; font-weight: 700; line-height: 1.2; }\n" +
+      "  .spark { display: inline-block; font-size: 16px; padding: 2px 8px; margin-left: 4px;\n" +
+      "           background: rgba(255,211,78,0.18); border-radius: 999px; vertical-align: middle; }\n" +
+      "  .btns { display: flex; gap: 8px; flex: none; }\n" +
+      "  .pb { border: none; border-radius: 12px; background: #7b6fd6; color: #fff;\n" +
+      "        font-size: 20px; padding: 10px 14px; }\n" +
+      "  .pb:active { background: #5b4ba0; }\n" +
+      "  .rom { color: #cfc7f0; font-size: 14px; margin-top: 8px; }\n" +
+      "  .pron { color: #ffd34e; margin-left: 6px; }\n" +
+      "  .mean { font-size: 17px; margin-top: 4px; }\n" +
+      "  .ex { margin-top: 10px; font-size: 14px; color: #ded8f5; background: rgba(0,0,0,0.18);\n" +
+      "        border-radius: 10px; padding: 10px 12px; }\n" +
+      "  .ex .cn { color: #a99fe0; }\n" +
+      "  .sechead { font-size: 14px; color: #b3a9df; margin: 22px 2px 2px; }\n" +
+      "  .note { color: #b3a9df; font-size: 14px; padding: 12px 2px; }\n" +
+      "  .bar { position: fixed; left: 0; right: 0; bottom: 0; display: flex; gap: 8px;\n" +
+      "         padding: 12px 16px calc(12px + env(safe-area-inset-bottom));\n" +
+      "         background: rgba(20,14,38,0.92); backdrop-filter: blur(8px); }\n" +
+      "  .bar button { flex: 1; border: none; border-radius: 12px; color: #fff; font-size: 15px; padding: 14px 8px; }\n" +
+      "  .bar .all { background: #7b6fd6; } .bar .stop { background: #463c7a; } .bar .yest { background: #463c7a; }\n" +
+      "  #overlay { position: fixed; inset: 0; display: none; align-items: center; justify-content: center;\n" +
+      "             background: rgba(0,0,0,0.55); padding: 24px; }\n" +
+      "  .sheet { background: #2a2350; border-radius: 18px; padding: 20px; max-width: 460px; width: 100%; }\n" +
+      "  .sheet h3 { margin: 0 0 8px; font-size: 18px; }\n" +
+      "  .sheet .chg { color: #ffd34e; font-size: 20px; font-weight: 700; margin-bottom: 10px; }\n" +
+      "  .sheet p { margin: 0 0 16px; line-height: 1.6; color: #e4e0f5; font-size: 15px; }\n" +
+      "  .sheet button { width: 100%; border: none; border-radius: 12px; background: #7b6fd6;\n" +
+      "                  color: #fff; font-size: 16px; padding: 14px; }\n" +
+      "</style></head><body>\n" +
+      '<h1>오늘의 단어</h1>\n' +
+      '<div class="sub" id="sub"></div>\n' +
+      '<div id="today"></div>\n' +
+      '<div id="yesterdayWrap" style="display:none">\n' +
+      '  <div class="sechead" id="yLabel"></div>\n' +
+      '  <div id="yList"></div>\n' +
+      "</div>\n" +
+      '<div class="bar">\n' +
+      '  <button class="all" data-act="all">▶️ 全部朗读</button>\n' +
+      '  <button class="stop" data-act="stop">⏹ 停止</button>\n' +
+      '  <button class="yest" data-act="yest">📅 回顾昨天</button>\n' +
+      "</div>\n" +
+      '<div id="overlay"><div class="sheet">\n' +
+      '  <h3 id="sheetTitle"></h3>\n' +
+      '  <div class="chg" id="sheetChg"></div>\n' +
+      '  <p id="sheetDesc"></p>\n' +
+      '  <button data-act="close">知道了</button>\n' +
+      "</div></div>\n" +
+      "<script>\n" +
+      "var DATA = " + dataJson + ";\n" +
+      "function q(s){ return document.querySelector(s); }\n" +
+      "function esc(s){ return (s==null?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\"/g,'&quot;'); }\n" +
+      "function getList(g){ return g==='today' ? DATA.today : (DATA.yesterday ? DATA.yesterday.words : []); }\n" +
+      "function speak(text, rate){\n" +
+      "  if(!('speechSynthesis' in window) || !text) return;\n" +
+      "  var u = new SpeechSynthesisUtterance(text); u.lang='ko-KR'; u.rate = rate;\n" +
+      "  speechSynthesis.cancel(); speechSynthesis.speak(u);\n" +
+      "}\n" +
+      "function sayWord(g,i,slow){ var w=getList(g)[i]; if(w) speak(w.hangul, slow?0.5:1); }\n" +
+      "function sayExample(g,i){ var w=getList(g)[i]; if(w) speak(w.example,1); }\n" +
+      "function speakAll(){\n" +
+      "  if(!('speechSynthesis' in window)) return;\n" +
+      "  speechSynthesis.cancel();\n" +
+      "  DATA.today.forEach(function(w){ var u=new SpeechSynthesisUtterance(w.hangul); u.lang='ko-KR'; u.rate=1; speechSynthesis.speak(u); });\n" +
+      "}\n" +
+      "function stopSpeak(){ if('speechSynthesis' in window) speechSynthesis.cancel(); }\n" +
+      "function showInfo(g,i){\n" +
+      "  var w=getList(g)[i]; if(!w||!w.soundChange) return; var info=DATA.info[w.soundChange]; if(!info) return;\n" +
+      "  q('#sheetTitle').textContent=info.label;\n" +
+      "  q('#sheetChg').textContent=w.hangul+'  →  '+(w.pronounced||'');\n" +
+      "  q('#sheetDesc').textContent=info.desc;\n" +
+      "  q('#overlay').style.display='flex';\n" +
+      "}\n" +
+      "function closeSheet(){ q('#overlay').style.display='none'; }\n" +
+      "function toggleYesterday(){\n" +
+      "  var wrap=q('#yesterdayWrap');\n" +
+      "  wrap.style.display = (wrap.style.display==='none') ? 'block' : 'none';\n" +
+      "  if(wrap.style.display==='block') wrap.scrollIntoView({behavior:'smooth'});\n" +
+      "}\n" +
+      "function cardHTML(g,i,w){\n" +
+      "  var mark = w.soundChange ? ' <span class=\"spark\" data-act=\"info\" data-g=\"'+g+'\" data-i=\"'+i+'\">⚡</span>' : '';\n" +
+      "  var pron = w.pronounced ? ' <span class=\"pron\">'+esc(w.pronounced)+'</span>' : '';\n" +
+      "  return '<div class=\"card\">'\n" +
+      "    + '<div class=\"top\"><div class=\"hg\">'+esc(w.hangul)+mark+'</div>'\n" +
+      "    + '<div class=\"btns\">'\n" +
+      "    +   '<button class=\"pb\" data-act=\"play\" data-g=\"'+g+'\" data-i=\"'+i+'\">🔊</button>'\n" +
+      "    +   '<button class=\"pb\" data-act=\"slow\" data-g=\"'+g+'\" data-i=\"'+i+'\">🐢</button>'\n" +
+      "    + '</div></div>'\n" +
+      "    + '<div class=\"rom\">'+esc(w.romanization)+pron+'</div>'\n" +
+      "    + '<div class=\"mean\">'+esc(w.meaning)+'</div>'\n" +
+      "    + '<div class=\"ex\" data-act=\"ex\" data-g=\"'+g+'\" data-i=\"'+i+'\">📖 '+esc(w.example)+' <span class=\"cn\">'+esc(w.exampleMeaning)+'</span></div>'\n" +
+      "    + '</div>';\n" +
+      "}\n" +
+      "function renderList(g, el){\n" +
+      "  var list=getList(g), out='';\n" +
+      "  for(var i=0;i<list.length;i++) out+=cardHTML(g,i,list[i]);\n" +
+      "  el.innerHTML = out || '<div class=\"note\">暂无内容</div>';\n" +
+      "}\n" +
+      "// 事件委托：所有点击集中处理，避免内联 onclick 的引号转义问题\n" +
+      "document.addEventListener('click', function(e){\n" +
+      "  var t = e.target.closest('[data-act]'); if(!t) return;\n" +
+      "  var act=t.getAttribute('data-act'), g=t.getAttribute('data-g'), i=+t.getAttribute('data-i');\n" +
+      "  if(act==='play') sayWord(g,i,false);\n" +
+      "  else if(act==='slow') sayWord(g,i,true);\n" +
+      "  else if(act==='ex') sayExample(g,i);\n" +
+      "  else if(act==='info') showInfo(g,i);\n" +
+      "  else if(act==='all') speakAll();\n" +
+      "  else if(act==='stop') stopSpeak();\n" +
+      "  else if(act==='yest') toggleYesterday();\n" +
+      "  else if(act==='close') closeSheet();\n" +
+      "});\n" +
+      "q('#sub').textContent = DATA.date + '   ·   🔊 正常  🐢 慢速  ⚡ 音变';\n" +
+      "renderList('today', q('#today'));\n" +
+      "if(DATA.yesterday){ q('#yLabel').textContent='昨天 · '+DATA.yesterday.date; renderList('yesterday', q('#yList')); }\n" +
+      "else { q('#yLabel').textContent='回顾昨天'; q('#yList').innerHTML='<div class=\"note\">还没有昨天的记录，明天再来看吧。</div>'; }\n" +
+      "</script></body></html>"
+    );
   },
 };
 
@@ -395,7 +375,7 @@ async function main() {
     widget.refreshAfterDate = nextMidnight(); // 建议在次日零点后刷新（系统不保证准点）
     Script.setWidget(widget);
   } else {
-    // App 内运行（点击组件跳转而来）：打开 UITable 交互界面
+    // App 内运行（点击组件跳转而来）：打开 WebView 听读界面
     await InteractView.present(words, vocab, finalState);
   }
   Script.complete();
