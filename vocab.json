@@ -2,7 +2,7 @@
   "meta": {
     "name": "TOPIK I 高频核心词库",
     "version": 3,
-    "count": 298
+    "count": 398
   },
   "words": [
     {
@@ -3215,6 +3215,917 @@
       "soundChange": null,
       "pos": "名词",
       "meaning": "建筑物",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0299",
+      "hangul": "걸다",
+      "romanization": "geolda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "挂；打（电话）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0300",
+      "hangul": "걸리다",
+      "romanization": "geolrida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "花费（时间）；挂着",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0301",
+      "hangul": "걸어가다",
+      "romanization": "georeogada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "走去，步行前往",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0302",
+      "hangul": "걸어오다",
+      "romanization": "georeooda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "走来",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0303",
+      "hangul": "걸음",
+      "romanization": "georeum",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "步伐，脚步",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0304",
+      "hangul": "검사",
+      "romanization": "geomsa",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "检查",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0305",
+      "hangul": "검은색",
+      "romanization": "geomeunsaek",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "黑色",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0306",
+      "hangul": "검정",
+      "romanization": "geomjeong",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "黑色",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0307",
+      "hangul": "것",
+      "romanization": "geot",
+      "soundChange": null,
+      "pos": "依存名词",
+      "meaning": "东西，……的",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0308",
+      "hangul": "겉",
+      "romanization": "geot",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "表面，外表",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0309",
+      "hangul": "게으르다",
+      "romanization": "geeureuda",
+      "soundChange": null,
+      "pos": "形容词",
+      "meaning": "懒",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0310",
+      "hangul": "게임",
+      "romanization": "geim",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "游戏",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0311",
+      "hangul": "겨울",
+      "romanization": "gyeoul",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "冬天",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0312",
+      "hangul": "결과",
+      "romanization": "gyeolgwa",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "结果",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0313",
+      "hangul": "결석",
+      "romanization": "gyeolseok",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "缺席",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0314",
+      "hangul": "결심",
+      "romanization": "gyeolsim",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "决心",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0315",
+      "hangul": "결정",
+      "romanization": "gyeoljeong",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "决定",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0316",
+      "hangul": "결혼",
+      "romanization": "gyeolhon",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "结婚",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0317",
+      "hangul": "결혼식",
+      "romanization": "gyeolhonsik",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "婚礼",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0318",
+      "hangul": "경기",
+      "romanization": "gyeonggi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "比赛",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0319",
+      "hangul": "경찰",
+      "romanization": "gyeongchal",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "警察",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0320",
+      "hangul": "경찰서",
+      "romanization": "gyeongchalseo",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "警察局",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0321",
+      "hangul": "경치",
+      "romanization": "gyeongchi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "景色，风景",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0322",
+      "hangul": "경험",
+      "romanization": "gyeongheom",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "经验",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0323",
+      "hangul": "계단",
+      "romanization": "gyedan",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "楼梯，台阶",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0324",
+      "hangul": "계산",
+      "romanization": "gyesan",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "计算；结账",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0325",
+      "hangul": "계속",
+      "romanization": "gyesok",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "继续，一直",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0326",
+      "hangul": "계시다",
+      "romanization": "gyesida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "在，有（敬语）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0327",
+      "hangul": "계절",
+      "romanization": "gyejeol",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "季节",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0328",
+      "hangul": "계획",
+      "romanization": "gyehoek",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "计划",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0329",
+      "hangul": "고개",
+      "romanization": "gogae",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "头",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0330",
+      "hangul": "고등학교",
+      "romanization": "godeunghakgyo",
+      "pronounced": "[고등학꾜]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "高中",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0331",
+      "hangul": "고등학생",
+      "romanization": "godeunghaksaeng",
+      "pronounced": "[고등학쌩]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "高中生",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0332",
+      "hangul": "고르다",
+      "romanization": "goreuda",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "挑选，选择",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0333",
+      "hangul": "고맙다",
+      "romanization": "gomapda",
+      "pronounced": "[고맙따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "谢谢，感谢",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0334",
+      "hangul": "고모",
+      "romanization": "gomo",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "姑姑",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0335",
+      "hangul": "고민",
+      "romanization": "gomin",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "苦恼，烦恼",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0336",
+      "hangul": "고속버스",
+      "romanization": "gosokbeoseu",
+      "pronounced": "[고속뻐스]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "高速大巴",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0337",
+      "hangul": "고양이",
+      "romanization": "goyangi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "猫",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0338",
+      "hangul": "고장",
+      "romanization": "gojang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "故障",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0339",
+      "hangul": "고추장",
+      "romanization": "gochujang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "辣椒酱",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0340",
+      "hangul": "고치다",
+      "romanization": "gochida",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "修理，改正",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0341",
+      "hangul": "고프다",
+      "romanization": "gopeuda",
+      "soundChange": null,
+      "pos": "形容词",
+      "meaning": "饿",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0342",
+      "hangul": "고향",
+      "romanization": "gohyang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "故乡，家乡",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0343",
+      "hangul": "곧",
+      "romanization": "got",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "马上，立刻",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0344",
+      "hangul": "곳",
+      "romanization": "got",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "地方",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0345",
+      "hangul": "공",
+      "romanization": "gong",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "球",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0346",
+      "hangul": "공무원",
+      "romanization": "gongmuwon",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "公务员",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0347",
+      "hangul": "공부",
+      "romanization": "gongbu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "学习",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0348",
+      "hangul": "공장",
+      "romanization": "gongjang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "工厂",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0349",
+      "hangul": "공짜",
+      "romanization": "gongjja",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "免费",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0350",
+      "hangul": "공책",
+      "romanization": "gongchaek",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "笔记本",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0351",
+      "hangul": "공휴일",
+      "romanization": "gonghyuil",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "公休日，法定假日",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0352",
+      "hangul": "과거",
+      "romanization": "gwageo",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "过去",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0353",
+      "hangul": "과자",
+      "romanization": "gwaja",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "点心，饼干",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0354",
+      "hangul": "관계",
+      "romanization": "gwangye",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "关系",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0355",
+      "hangul": "관광",
+      "romanization": "gwangwang",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "观光，旅游",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0356",
+      "hangul": "관광객",
+      "romanization": "gwangwanggaek",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "游客",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0357",
+      "hangul": "관광지",
+      "romanization": "gwangwangji",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "旅游景点",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0358",
+      "hangul": "관심",
+      "romanization": "gwansim",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "关心，兴趣",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0359",
+      "hangul": "광고",
+      "romanization": "gwanggo",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "广告",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0360",
+      "hangul": "광주",
+      "romanization": "gwangju",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "光州（地名）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0361",
+      "hangul": "괜찮다",
+      "romanization": "gwaenchanda",
+      "soundChange": null,
+      "pos": "形容词",
+      "meaning": "没关系，还好",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0362",
+      "hangul": "괴로워하다",
+      "romanization": "goerowohada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "感到痛苦",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0363",
+      "hangul": "교과서",
+      "romanization": "gyogwaseo",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "教科书",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0364",
+      "hangul": "교사",
+      "romanization": "gyosa",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "教师",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0365",
+      "hangul": "교수",
+      "romanization": "gyosu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "教授",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0366",
+      "hangul": "교육",
+      "romanization": "gyoyuk",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "教育",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0367",
+      "hangul": "교통",
+      "romanization": "gyotong",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "交通",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0368",
+      "hangul": "교통비",
+      "romanization": "gyotongbi",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "交通费",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0369",
+      "hangul": "교통사고",
+      "romanization": "gyotongsago",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "交通事故",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0370",
+      "hangul": "교환",
+      "romanization": "gyohwan",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "交换",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0371",
+      "hangul": "교회",
+      "romanization": "gyohoe",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "教堂",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0372",
+      "hangul": "구경",
+      "romanization": "gugyeong",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "观看，游览",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0373",
+      "hangul": "구두",
+      "romanization": "gudu",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "皮鞋",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0374",
+      "hangul": "구름",
+      "romanization": "gureum",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "云",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0375",
+      "hangul": "구십",
+      "romanization": "gusip",
+      "soundChange": null,
+      "pos": "数词",
+      "meaning": "九十",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0376",
+      "hangul": "구월",
+      "romanization": "guwol",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "九月",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0377",
+      "hangul": "국",
+      "romanization": "guk",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "汤",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0378",
+      "hangul": "국내",
+      "romanization": "guknae",
+      "pronounced": "[궁내]",
+      "soundChange": "nasalization",
+      "pos": "名词",
+      "meaning": "国内",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0379",
+      "hangul": "국적",
+      "romanization": "gukjeok",
+      "pronounced": "[국쩍]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "国籍",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0380",
+      "hangul": "국제",
+      "romanization": "gukje",
+      "pronounced": "[국쩨]",
+      "soundChange": "tensification",
+      "pos": "名词",
+      "meaning": "国际",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0381",
+      "hangul": "군인",
+      "romanization": "gunin",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "军人",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0382",
+      "hangul": "굳다",
+      "romanization": "gutda",
+      "pronounced": "[굳따]",
+      "soundChange": "tensification",
+      "pos": "动词",
+      "meaning": "变硬，坚硬",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0383",
+      "hangul": "굵다",
+      "romanization": "gukda",
+      "pronounced": "[국따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "粗",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0384",
+      "hangul": "굽다",
+      "romanization": "gupda",
+      "pronounced": "[굽따]",
+      "soundChange": "tensification",
+      "pos": "动词",
+      "meaning": "烤",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0385",
+      "hangul": "궁금하다",
+      "romanization": "gunggeumhada",
+      "soundChange": null,
+      "pos": "形容词",
+      "meaning": "好奇，想知道",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0386",
+      "hangul": "권",
+      "romanization": "gwon",
+      "soundChange": null,
+      "pos": "依存名词",
+      "meaning": "本（量词）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0387",
+      "hangul": "귀걸이",
+      "romanization": "gwigeori",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "耳环",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0388",
+      "hangul": "귀여워하다",
+      "romanization": "gwiyeowohada",
+      "soundChange": null,
+      "pos": "动词",
+      "meaning": "疼爱",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0389",
+      "hangul": "귀엽다",
+      "romanization": "gwiyeopda",
+      "pronounced": "[귀엽따]",
+      "soundChange": "tensification",
+      "pos": "形容词",
+      "meaning": "可爱",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0390",
+      "hangul": "귀찮다",
+      "romanization": "gwichanda",
+      "soundChange": null,
+      "pos": "形容词",
+      "meaning": "麻烦，嫌麻烦",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0391",
+      "hangul": "규칙",
+      "romanization": "gyuchik",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "规则",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0392",
+      "hangul": "귤",
+      "romanization": "gyul",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "橘子",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0393",
+      "hangul": "그",
+      "romanization": "geu",
+      "soundChange": null,
+      "pos": "冠词",
+      "meaning": "那，那个",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0394",
+      "hangul": "그거",
+      "romanization": "geugeo",
+      "soundChange": null,
+      "pos": "代词",
+      "meaning": "那个（口语）",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0395",
+      "hangul": "그것",
+      "romanization": "geugeot",
+      "soundChange": null,
+      "pos": "代词",
+      "meaning": "那个",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0396",
+      "hangul": "그곳",
+      "romanization": "geugot",
+      "soundChange": null,
+      "pos": "代词",
+      "meaning": "那里",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0397",
+      "hangul": "그날",
+      "romanization": "geunal",
+      "soundChange": null,
+      "pos": "名词",
+      "meaning": "那天",
+      "level": "TOPIK1"
+    },
+    {
+      "id": "w0398",
+      "hangul": "그냥",
+      "romanization": "geunyang",
+      "soundChange": null,
+      "pos": "副词",
+      "meaning": "就那样，只是",
       "level": "TOPIK1"
     }
   ]
